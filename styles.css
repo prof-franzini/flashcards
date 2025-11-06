@@ -110,6 +110,11 @@ button.primary {
   background: var(--accent);
   color: white;
 }
+
+#btn-home {
+  margin-left: 8px;
+}
+
 button:hover { transform: translateY(-2px); }
 
 .footer {
