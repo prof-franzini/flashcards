@@ -53,7 +53,12 @@ el.btnStart.addEventListener('click', () => {
 });
 
 function startArea(area) {
-  cards = area === 'tutte' ? [...allCards] : allCards.filter(c => c.area === area);
+  cards = area === 'tutte'
+  ? [...allCards]
+  : allCards.filter(c =>
+      c.area.trim().toLowerCase().replace(/['’]/g, "'") ===
+      area.trim().toLowerCase().replace(/['’]/g, "'")
+    );
 
   if (cards.length === 0) {
     alert(`Nessuna carta trovata per l'area: ${area}`);
