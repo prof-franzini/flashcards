@@ -16,45 +16,60 @@
     </div>
   </header>
 
-  <main>
-    <section class="controls">
-      <button id="btn-draw" class="primary">Estrai carta (N)</button>
-      <button id="btn-reveal" class="secondary">Rivela (Spazio)</button>
-      <button id="btn-to-review" class="secondary" disabled>Metti in Revisione (R)</button>
-      <button id="btn-reset" class="ghost">Reset sessione</button>
-      <button id="btn-review-mode" class="ghost" disabled>Avvia Revisione</button>
+  <main class="layout">
+    <!-- Pila Mazzo -->
+    <aside class="pile-col">
+      <h2 class="pile-title">Mazzo</h2>
+      <div id="deck-pile" class="pile" aria-label="Pila del mazzo"></div>
+    </aside>
+
+    <!-- Area centrale -->
+    <section class="center-col">
+      <section class="controls">
+        <button id="btn-draw" class="primary">Estrai carta (N)</button>
+        <button id="btn-reveal" class="secondary">Rivela (Spazio)</button>
+        <button id="btn-to-review" class="secondary" disabled>Metti in Revisione (R)</button>
+        <button id="btn-review-mode" class="ghost" disabled>Avvia Revisione</button>
+        <button id="btn-reset" class="ghost">Reset sessione</button>
+      </section>
+
+      <section id="card-area" class="card-area" aria-live="polite">
+        <div class="card" id="card" tabindex="0" aria-label="flashcard">
+          <div class="card-face" id="card-front">
+            <div class="card-tag" id="card-direction">—</div>
+            <div class="card-text" id="card-question">Clicca “Estrai carta” per iniziare.</div>
+            <div class="card-meta" id="card-meta"></div>
+          </div>
+          <div class="card-face hidden" id="card-back">
+            <div class="card-tag">Risposta</div>
+            <div class="card-text" id="card-answer">—</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="help">
+        <details>
+          <summary>Guida rapida</summary>
+          <ul>
+            <li><strong>Estrai carta (N):</strong> nuova carta casuale dalla pila.</li>
+            <li><strong>Rivela (Spazio):</strong> mostra il retro/risposta.</li>
+            <li><strong>Metti in Revisione (R):</strong> sposta la carta nella pila Revisione.</li>
+            <li><strong>Avvia Revisione:</strong> ripassa solo le carte in revisione.</li>
+            <li><strong>Reset sessione:</strong> ricomincia e mescola tutto.</li>
+          </ul>
+        </details>
+      </section>
     </section>
 
-    <section id="card-area" class="card-area" aria-live="polite">
-      <div class="card" id="card" tabindex="0" aria-label="flashcard">
-        <div class="card-face" id="card-front">
-          <div class="card-tag" id="card-direction">—</div>
-          <div class="card-text" id="card-question">Clicca “Estrai carta” per iniziare.</div>
-          <div class="card-meta" id="card-meta"></div>
-        </div>
-        <div class="card-face hidden" id="card-back">
-          <div class="card-tag">Risposta</div>
-          <div class="card-text" id="card-answer">—</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="help">
-      <details>
-        <summary>Guida rapida</summary>
-        <ul>
-          <li><strong>Estrai carta (N):</strong> mostra una nuova carta casuale dalla pila.</li>
-          <li><strong>Rivela (Spazio):</strong> mostra il retro/risposta.</li>
-          <li><strong>Metti in Revisione (R):</strong> dopo la rivelazione, sposta la carta nella pila “Revisione”.</li>
-          <li><strong>Avvia Revisione:</strong> a mazzo finito (o quando vuoi), ripassa solo le carte in revisione.</li>
-          <li><strong>Reset sessione:</strong> ricomincia mescolando di nuovo tutte le carte.</li>
-        </ul>
-      </details>
-    </section>
+    <!-- Pila Revisione -->
+    <aside class="pile-col">
+      <h2 class="pile-title">Revisione</h2>
+      <div id="review-pile" class="pile" aria-label="Pila della revisione"></div>
+    </aside>
   </main>
 
   <footer class="footer">
-    <small>© 2025 – Flashcards per Concorso Scuola. Repo GitHub Pages.</small>
+    <small>© 2025 – Flashcards per Concorso Scuola</small>
   </footer>
 
   <script src="app.js" defer></script>
