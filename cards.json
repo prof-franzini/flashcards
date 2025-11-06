@@ -185,3 +185,239 @@
     "area": "Pedagogia generale e storia della pedagogia"
   }
 ]
+
+[
+  {
+    "a": "Chi è il fondatore della teoria dello sviluppo cognitivo?",
+    "b": "Jean Piaget, che descrive lo sviluppo dell’intelligenza come un processo di costruzione attiva attraverso fasi successive.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Quali sono le quattro fasi dello sviluppo cognitivo secondo Piaget?",
+    "b": "Sensomotoria (0-2), preoperatoria (2-7), operazioni concrete (7-11), operazioni formali (dai 12 anni).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa si intende per 'assimilazione' e 'accomodamento' in Piaget?",
+    "b": "L’assimilazione integra nuove esperienze negli schemi esistenti; l’accomodamento modifica gli schemi per adattarsi al nuovo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa rappresenta l’equilibrazione in Piaget?",
+    "b": "Il meccanismo di autoregolazione che mantiene l’equilibrio tra assimilazione e accomodamento.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi è l’autore della teoria socio-costruttivista?",
+    "b": "Lev Vygotskij, che sottolinea l’importanza del contesto sociale e del linguaggio nello sviluppo cognitivo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cos’è la Zona di Sviluppo Prossimale (ZSP)?",
+    "b": "Lo spazio tra ciò che un bambino può fare da solo e ciò che può fare con l’aiuto di un adulto o un pari più esperto.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa si intende per 'scaffolding'?",
+    "b": "Il sostegno temporaneo fornito all’allievo per aiutarlo a raggiungere un livello superiore di competenza.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha introdotto il concetto di apprendimento per scoperta?",
+    "b": "Jerome Bruner, che considera l’apprendimento un processo di costruzione attiva guidato dalla curiosità e dalla riflessione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa propone Bruner nel 'curricolo a spirale'?",
+    "b": "Riprendere gli stessi concetti a livelli crescenti di complessità, adattandoli all’età e alle competenze dell’alunno.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha elaborato la teoria delle intelligenze multiple?",
+    "b": "Howard Gardner, che individua diverse forme di intelligenza (logico-matematica, linguistica, musicale, spaziale, interpersonale, ecc.).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Qual è il significato di 'intelligenza emotiva' secondo Daniel Goleman?",
+    "b": "La capacità di riconoscere, comprendere e gestire le proprie emozioni e quelle altrui.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha proposto la teoria triarchica dell’intelligenza?",
+    "b": "Robert Sternberg, che distingue tre componenti: analitica, creativa e pratica.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa studia la psicologia cognitiva?",
+    "b": "I processi mentali interni come percezione, memoria, attenzione, linguaggio e risoluzione dei problemi.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Quali sono i principali tipi di memoria?",
+    "b": "Sensoriale, a breve termine e a lungo termine.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Qual è la differenza tra memoria esplicita e implicita?",
+    "b": "La memoria esplicita riguarda i ricordi consapevoli, quella implicita abilità e abitudini non consapevoli.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha proposto il modello multicomponenziale della memoria di lavoro?",
+    "b": "Baddeley e Hitch, con tre componenti: esecutivo centrale, ciclo fonologico e taccuino visuo-spaziale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi è il fondatore della psicoanalisi?",
+    "b": "Sigmund Freud, che spiega la personalità come interazione tra Es, Io e Super-io.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Quali sono le fasi dello sviluppo psicosessuale secondo Freud?",
+    "b": "Orale, anale, fallica, latenza e genitale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Qual è il contributo di Anna Freud alla psicoanalisi infantile?",
+    "b": "Ha approfondito i meccanismi di difesa e l’importanza dell’Io nello sviluppo infantile.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha elaborato la teoria psicosociale dello sviluppo?",
+    "b": "Erik Erikson, che individua otto fasi di vita, ognuna caratterizzata da un conflitto evolutivo da risolvere.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa rappresenta la crisi di 'identità vs confusione di ruoli' in Erikson?",
+    "b": "È la sfida dell’adolescente nel definire chi è e quale ruolo vuole assumere nella società.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha teorizzato l’attaccamento?",
+    "b": "John Bowlby, secondo cui il legame affettivo primario tra bambino e caregiver è fondamentale per lo sviluppo emotivo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Quali tipi di attaccamento ha individuato Mary Ainsworth?",
+    "b": "Sicuro, insicuro-evitante, insicuro-ambivalente e disorganizzato.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa dimostrano gli esperimenti di Harlow con le scimmie?",
+    "b": "Che il contatto affettivo è più importante del nutrimento nel legame di attaccamento.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha introdotto la teoria ecologica dello sviluppo?",
+    "b": "Urie Bronfenbrenner, con il modello dei sistemi concentrici: microsistema, mesosistema, esosistema e macrosistema.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha elaborato la teoria dell’apprendimento sociale?",
+    "b": "Albert Bandura, che introduce il concetto di apprendimento per osservazione e il ruolo del modello.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cos’è l’autoefficacia secondo Bandura?",
+    "b": "La convinzione dell’individuo di essere capace di affrontare efficacemente un compito.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha proposto la teoria della motivazione umana basata sui bisogni?",
+    "b": "Abraham Maslow, con la piramide dei bisogni: fisiologici, sicurezza, appartenenza, stima e autorealizzazione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi è il fondatore del comportamentismo classico?",
+    "b": "Ivan Pavlov, che studiò il condizionamento classico attraverso esperimenti con i cani.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha formulato la teoria del condizionamento operante?",
+    "b": "B.F. Skinner, secondo cui il comportamento è influenzato dalle conseguenze (rinforzo e punizione).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha studiato l’apprendimento per insight?",
+    "b": "Wolfgang Köhler, che osservò nei primati la capacità di risolvere problemi improvvisamente ('aha moment').",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha elaborato la teoria dell’apprendimento significativo?",
+    "b": "David Ausubel, che sostiene che l’apprendimento è efficace quando le nuove informazioni si collegano alle conoscenze pregresse.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi è l’autore del concetto di 'mappe concettuali'?",
+    "b": "Joseph Novak, che ha sviluppato uno strumento per rappresentare visivamente relazioni tra concetti.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha proposto la teoria degli stili cognitivi?",
+    "b": "Jerome Kagan e Herman Witkin, che descrivono diverse modalità individuali di elaborare l’informazione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha introdotto il concetto di mediazione cognitiva?",
+    "b": "Reuven Feuerstein, che considera l’insegnante un mediatore che guida e potenzia le funzioni cognitive dell’allievo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa sono i neuroni specchio?",
+    "b": "Cellule nervose che si attivano sia quando si compie un’azione sia quando si osserva la stessa azione compiuta da altri.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha scoperto i neuroni specchio?",
+    "b": "Giacomo Rizzolatti e collaboratori a Parma negli anni '90.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa si intende per 'empatia' dal punto di vista neuroscientifico?",
+    "b": "La capacità di comprendere e condividere lo stato emotivo altrui grazie all’attivazione dei neuroni specchio.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha studiato lo sviluppo morale?",
+    "b": "Lawrence Kohlberg, che ha individuato tre livelli di sviluppo morale: preconvenzionale, convenzionale e postconvenzionale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi è l’autore della teoria delle emozioni di base?",
+    "b": "Carroll Izard, che identifica emozioni universali come gioia, rabbia, paura e tristezza.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa studia la psicologia sociale?",
+    "b": "I processi di influenza reciproca tra individuo e gruppo, come atteggiamenti, leadership, conformismo e cooperazione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha introdotto il concetto di campo psicologico e dinamiche di gruppo?",
+    "b": "Kurt Lewin, che analizza il comportamento come funzione della persona e dell’ambiente (B = f(P,E)).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Che cosa si intende per 'relazione educativa'?",
+    "b": "Un rapporto intenzionale e asimmetrico basato su comunicazione, fiducia e orientamento alla crescita dell’allievo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Quali sono gli stili educativi principali?",
+    "b": "Autoritario, permissivo, trascurante e autore autorevole, quest’ultimo considerato il più equilibrato.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Chi ha studiato la comunicazione interpersonale e i suoi assiomi?",
+    "b": "Paul Watzlawick, che individua cinque assiomi fondamentali della comunicazione umana.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Cosa significa 'non si può non comunicare'?",
+    "b": "È il primo assioma di Watzlawick: ogni comportamento in un contesto relazionale comunica qualcosa.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  }
+]
+
+
+
