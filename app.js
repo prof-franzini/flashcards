@@ -2,6 +2,13 @@ const DATA_URL = 'cards.json';
 const RANDOM_DIRECTION = true;
 
 const el = {
+  // Selezione area
+  areaSelect: document.getElementById('area-select'),
+  areaDropdown: document.getElementById('area-dropdown'),
+  btnStart: document.getElementById('btn-start'),
+
+  // Area di gioco
+  gameArea: document.getElementById('game-area'),
   question: document.getElementById('card-question'),
   answer: document.getElementById('card-answer'),
   direction: document.getElementById('card-direction'),
@@ -15,25 +22,57 @@ const el = {
   btnReset: document.getElementById('btn-reset')
 };
 
+let allCards = [];
 let cards = [];
 let deck = [];
 let review = [];
 let current = null;
 let inReview = false;
 let state = 'idle'; // idle | shown | revealed
+let selectedArea = 'tutte';
 
+// -----------------------------
+// Caricamento carte
+// -----------------------------
 async function loadCards() {
   const res = await fetch(DATA_URL);
   const data = await res.json();
-  cards = data.map((c, i) => ({
+  allCards = data.map((c, i) => ({
     id: i,
-    a: c.a || c.author,
-    b: c.b || c.theory,
+    a: c.a,
+    b: c.b,
+    area: c.area || 'Generale',
     tags: c.tags || []
   })).filter(c => c.a && c.b);
+}
+
+// -----------------------------
+// Gestione area scelta
+// -----------------------------
+el.btnStart.addEventListener('click', () => {
+  selectedArea = el.areaDropdown.value;
+  startArea(selectedArea);
+});
+
+function startArea(area) {
+  // Filtra le carte in base alla scelta
+  cards = area === 'tutte' ? [...allCards] : allCards.filter(c => c.area === area);
+
+  if (cards.length === 0) {
+    alert(`Nessuna carta trovata per l'area: ${area}`);
+    return;
+  }
+
+  // Mostra area di gioco, nasconde selezione
+  el.areaSelect.classList.add('hidden');
+  el.gameArea.classList.remove('hidden');
+
   reset();
 }
 
+// -----------------------------
+// Funzioni di gioco
+// -----------------------------
 function reset() {
   deck = [...cards];
   shuffle(deck);
@@ -85,7 +124,10 @@ function drawCard() {
   el.answer.textContent = a;
   el.front.classList.remove('hidden');
   el.back.classList.add('hidden');
-  el.card.animate([{ transform: 'scale(0.8)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }], { duration: 250, easing: 'ease-out' });
+  el.card.animate(
+    [{ transform: 'scale(0.8)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }],
+    { duration: 250, easing: 'ease-out' }
+  );
   state = 'shown';
   updateCounts();
 }
@@ -112,8 +154,16 @@ function handleAction() {
   }
 }
 
+// -----------------------------
+// Eventi
+// -----------------------------
 el.card.addEventListener('click', handleAction);
-document.body.addEventListener('keydown', e => { if (e.key === ' ') { e.preventDefault(); handleAction(); } });
+document.body.addEventListener('keydown', e => {
+  if (e.key === ' ') {
+    e.preventDefault();
+    handleAction();
+  }
+});
 
 el.btnReview.addEventListener('click', () => {
   inReview = !inReview;
@@ -126,4 +176,7 @@ el.btnReview.addEventListener('click', () => {
 
 el.btnReset.addEventListener('click', reset);
 
+// -----------------------------
+// Avvio
+// -----------------------------
 loadCards();
