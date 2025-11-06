@@ -16,7 +16,8 @@ const el = {
   countRemaining: document.getElementById('count-remaining'),
   countReview: document.getElementById('count-review'),
   btnReview: document.getElementById('btn-toggle-review'),
-  btnReset: document.getElementById('btn-reset')
+  btnReset: document.getElementById('btn-reset'),
+  btnHome: document.getElementById('btn-home'),
 };
 
 let allCards = [];
@@ -172,6 +173,19 @@ el.btnReview.addEventListener('click', () => {
 });
 
 el.btnReset.addEventListener('click', reset);
+
+el.btnHome.addEventListener('click', () => {
+  // Torna al menu principale
+  el.gameArea.classList.add('hidden');
+  el.areaSelect.classList.remove('hidden');
+  state = 'idle';
+  current = null;
+  inReview = false;
+  deck = [];
+  review = [];
+  updateCounts();
+  showMessage('Tocca o premi spazio per iniziare');
+});
 
 // -----------------------------
 // Avvio
