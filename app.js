@@ -2,12 +2,9 @@ const DATA_URL = 'cards.json';
 const RANDOM_DIRECTION = true;
 
 const el = {
-  // Selezione area
   areaSelect: document.getElementById('area-select'),
   areaDropdown: document.getElementById('area-dropdown'),
   btnStart: document.getElementById('btn-start'),
-
-  // Area di gioco
   gameArea: document.getElementById('game-area'),
   question: document.getElementById('card-question'),
   answer: document.getElementById('card-answer'),
@@ -28,7 +25,7 @@ let deck = [];
 let review = [];
 let current = null;
 let inReview = false;
-let state = 'idle'; // idle | shown | revealed
+let state = 'idle';
 let selectedArea = 'tutte';
 
 // -----------------------------
@@ -44,6 +41,7 @@ async function loadCards() {
     area: c.area || 'Generale',
     tags: c.tags || []
   })).filter(c => c.a && c.b);
+  console.log("Carte caricate:", allCards.length);
 }
 
 // -----------------------------
@@ -55,7 +53,6 @@ el.btnStart.addEventListener('click', () => {
 });
 
 function startArea(area) {
-  // Filtra le carte in base alla scelta
   cards = area === 'tutte' ? [...allCards] : allCards.filter(c => c.area === area);
 
   if (cards.length === 0) {
@@ -63,10 +60,8 @@ function startArea(area) {
     return;
   }
 
-  // Mostra area di gioco, nasconde selezione
   el.areaSelect.classList.add('hidden');
   el.gameArea.classList.remove('hidden');
-
   reset();
 }
 
@@ -124,10 +119,7 @@ function drawCard() {
   el.answer.textContent = a;
   el.front.classList.remove('hidden');
   el.back.classList.add('hidden');
-  el.card.animate(
-    [{ transform: 'scale(0.8)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }],
-    { duration: 250, easing: 'ease-out' }
-  );
+  el.card.animate([{ transform: 'scale(0.8)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }], { duration: 250, easing: 'ease-out' });
   state = 'shown';
   updateCounts();
 }
