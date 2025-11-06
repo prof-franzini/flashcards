@@ -1,22 +1,29 @@
 :root{
-  --bg:#0f172a;
-  --panel:#111827;
-  --card:#0b1220;
-  --text:#e5e7eb;
-  --muted:#9ca3af;
-  --accent:#60a5fa;
-  --accent-2:#34d399;
-  --danger:#f87171;
-  --shadow: 0 10px 25px rgba(0,0,0,.35);
+  /* Tema chiaro */
+  --bg:#f5f7fb;
+  --panel:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --accent:#2563eb;
+  --accent-2:#10b981;
+  --danger:#ef4444;
+  --shadow:0 10px 25px rgba(0,0,0,.08);
   --radius:16px;
   --radius-sm:10px;
+
+  --pile-card-w: 140px;
+  --pile-card-h: 88px;
+  --pile-spread: 10px;  /* offset verticale tra carte visibili */
+  --pile-rotation: 2deg;
+  --max-visible: 10;
 }
 
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
   margin:0;
-  background: radial-gradient(1200px 600px at 20% -10%, #122037 0%, #0b1022 60%, #060913 100%);
+  background: var(--bg);
   color:var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   line-height:1.5;
@@ -24,38 +31,81 @@ body{
 
 .topbar{
   display:flex; align-items:center; justify-content:space-between;
-  padding:18px 22px;
-  background:rgba(0,0,0,.2); backdrop-filter:saturate(120%) blur(6px);
-  border-bottom:1px solid rgba(255,255,255,.06);
+  padding:16px 20px;
+  background:#f0f3fa;
+  border-bottom:1px solid var(--border);
 }
-.topbar h1{margin:0; font-size:1.15rem; font-weight:650}
-.stats{display:flex; gap:16px; font-size:.95rem; color:var(--muted)}
-.stats span{background:rgba(255,255,255,.06); padding:6px 10px; border-radius:999px}
+.topbar h1{margin:0; font-size:1.1rem; font-weight:650}
+.stats{display:flex; gap:12px; font-size:.95rem; color:var(--muted)}
+.stats span{background:#eef2ff; padding:6px 10px; border-radius:999px; border:1px solid #dbeafe}
 
-main{max-width:920px; margin:0 auto; padding:22px}
+.layout{
+  max-width:1200px; margin:0 auto; padding:20px;
+  display:grid; grid-template-columns: 220px 1fr 220px; gap:20px;
+}
+
+.pile-col{display:flex; flex-direction:column; gap:10px}
+.pile-title{margin:0; font-size:1rem; color:var(--muted); font-weight:600}
+
+.pile{
+  position:relative;
+  height: calc(var(--pile-card-h) + (var(--pile-spread) * (var(--max-visible)-1)) + 20px);
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  padding:10px;
+}
+
+/* “Carte” visive nella pila (max 10 visibili) */
+.pile-card{
+  position:absolute;
+  left:50%; transform:translateX(-50%);
+  width:var(--pile-card-w);
+  height:var(--pile-card-h);
+  background:linear-gradient(180deg, #ffffff, #f8fafc);
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:0 6px 14px rgba(0,0,0,.06);
+  will-change: transform, opacity;
+}
+.pile-card::after{
+  content:'';
+  position:absolute; inset:0; border-radius:12px;
+  pointer-events:none;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.02);
+}
+
+/* Area centrale */
+.center-col{display:flex; flex-direction:column; gap:14px}
 
 .controls{
-  display:flex; flex-wrap:wrap; gap:10px; margin-bottom:18px;
+  display:flex; flex-wrap:wrap; gap:10px; margin-bottom:6px;
 }
-
 button{
   border:none; border-radius:10px; padding:10px 14px; font-size:1rem; cursor:pointer;
-  background:#19233a; color:var(--text);
+  background:#eef2ff; color:var(--text);
   box-shadow: var(--shadow);
   transition: transform .05s ease, box-shadow .2s ease, background .2s ease, opacity .2s ease;
+  border:1px solid #dbeafe;
 }
 button:hover{transform:translateY(-1px)}
 button:disabled{opacity:.5; cursor:not-allowed; box-shadow:none}
-button.primary{background: linear-gradient(135deg, #1e3a8a, #2563eb)}
-button.secondary{background:#1f2937}
-button.ghost{background:transparent; border:1px solid rgba(255,255,255,.12)}
+button.primary{background: linear-gradient(135deg, #3b82f6, #2563eb); color:white; border:none}
+button.secondary{background:#f3f4f6}
+button.ghost{background:transparent; border:1px solid var(--border)}
 
 .card-area{
   display:grid; place-items:center; min-height:360px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
 }
 .card{
-  width:min(780px, 96vw); min-height:260px; background:linear-gradient(180deg, #0c1426, #0a1222);
-  border:1px solid rgba(255,255,255,.06); border-radius:var(--radius);
+  width:min(780px, 96%); min-height:260px; background:linear-gradient(180deg, #ffffff, #f8fafc);
+  border:1px solid var(--border); border-radius:var(--radius);
   padding:24px; box-shadow: var(--shadow);
   position:relative; overflow:hidden;
 }
@@ -65,16 +115,35 @@ button.ghost{background:transparent; border:1px solid rgba(255,255,255,.12)}
 .card-tag{
   align-self:flex-start;
   font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
-  color:#cbd5e1; background:rgba(96,165,250,.15);
-  padding:6px 10px; border-radius:999px; border:1px solid rgba(96,165,250,.35)
+  color:#334155; background:#e2e8f0;
+  padding:6px 10px; border-radius:999px; border:1px solid #cbd5e1
 }
-.card-text{font-size:1.3rem}
+.card-text{font-size:1.28rem}
 .card-meta{font-size:.95rem; color:var(--muted)}
 
-.help{margin-top:14px; color:var(--muted)}
-.help summary{color:#cbd5e1; cursor:pointer}
+.help{margin-top:6px; color:var(--muted)}
+.help summary{color:#334155; cursor:pointer}
+
 .footer{padding:20px; text-align:center; color:var(--muted)}
 
+/* Carta fluttuante per animazioni (fisico) */
+.card-float{
+  position:fixed; left:0; top:0; width:var(--pile-card-w); height:var(--pile-card-h);
+  background:linear-gradient(180deg, #ffffff, #f8fafc);
+  border:1px solid var(--border);
+  border-radius:12px; box-shadow:0 10px 24px rgba(0,0,0,.12);
+  transform-origin:center center;
+  z-index:9999;
+  will-change: transform, width, height, opacity;
+}
+
+/* Animazione di “estrazione” (deck -> centro) / “drop” (centro -> review) */
+@keyframes slight-tilt {
+  0% { transform: rotate(-1deg) }
+  100% { transform: rotate(1deg) }
+}
+
+/* Accessibilità: riduci movimento */
 @media (prefers-reduced-motion: reduce){
-  *{transition:none !important}
+  *{transition:none !important; animation:none !important}
 }
