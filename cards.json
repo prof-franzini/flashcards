@@ -1,16 +1,187 @@
 [
-  { "a": "Jean Piaget", "b": "Stadi dello sviluppo cognitivo; apprendimento come costruzione individuale; pre-operatorio 2–7 anni, operazioni concrete 7–11, formali 11+" , "tags": ["sviluppo","cognitivo"] },
-  { "a": "Lev Vygotskij", "b": "Zona di Sviluppo Prossimale (ZPD) e scaffolding; centralità del linguaggio e dell'interazione sociale", "tags": ["socio-costruttivismo"] },
-  { "a": "Jerome Bruner", "b": "Apprendimento per scoperta; rappresentazioni enattiva-iconica-simbolica; spirale curricolare", "tags": ["didattica","rappresentazioni"] },
-  { "a": "David Ausubel", "b": "Apprendimento significativo; organizzatori anticipatori; ruolo delle conoscenze pregresse", "tags": ["significativo"] },
-  { "a": "Albert Bandura", "b": "Apprendimento sociale/osservativo (modellamento), autoefficacia", "tags": ["motivazione"] },
-  { "a": "B.F. Skinner", "b": "Condizionamento operante; rinforzo positivo/negativo; programmi di rinforzo", "tags": ["comportamentismo"] },
-  { "a": "Carl Rogers", "b": "Apprendimento centrato sullo studente; clima facilitante; autenticità ed empatia", "tags": ["umanistica"] },
-  { "a": "Howard Gardner", "b": "Teoria delle intelligenze multiple (logico-matematica, linguistica, spaziale, ecc.)", "tags": ["differenziazione"] },
-  { "a": "Benjamin Bloom", "b": "Tassonomia degli obiettivi educativi (ricordare→creare) e Mastery Learning", "tags": ["valutazione"] },
-  { "a": "John Dewey", "b": "Learning by doing; scuola come comunità democratica; esperienza e riflessione", "tags": ["attivo","laboratoriale"] },
-  { "a": "Maria Montessori", "b": "Autoeducazione, ambiente preparato, materiali autocorrettivi, ruolo dell'osservazione", "tags": ["metodo"] },
-  { "a": "Viktor Lowenfeld", "b": "Stadi dello sviluppo del disegno infantile", "tags": ["arte","sviluppo"] },
-  { "a": "Robert Gagné", "b": "Nove eventi dell'istruzione; condizioni dell'apprendimento", "tags": ["istruzione"] },
-  { "a": "Lev Semënovič Vygotskij", "b": "Mediazione culturale degli strumenti e dei segni", "tags": ["socio-culturale"], "hint": "Variante nome completa" }
+  {
+    "a": "Quale opera di Rousseau segna la nascita della pedagogia moderna?",
+    "b": "L'Émile (1762), in cui Rousseau propone un'educazione naturale che rispetti i tempi e la libertà del bambino.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa significa per Rousseau 'seguire la natura' nell'educazione?",
+    "b": "Rispettare il ritmo naturale di sviluppo del bambino e proteggerlo dalle influenze corrotte della società.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi introduce il concetto di 'istruzione educativa'?",
+    "b": "Johann Friedrich Herbart, che considera la pedagogia una scienza basata su psicologia ed etica.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Quali sono le fasi del processo didattico secondo Herbart?",
+    "b": "Preparazione, presentazione, associazione, generalizzazione e applicazione.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è il contributo principale di Pestalozzi alla pedagogia?",
+    "b": "Ha unito istruzione e educazione morale, valorizzando l’intuizione e l’esperienza concreta come base dell’apprendimento.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa caratterizza la pedagogia positivista?",
+    "b": "Un approccio scientifico e sperimentale che considera l’educazione come strumento di progresso sociale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "In cosa consiste il pragmatismo pedagogico di Dewey?",
+    "b": "L’educazione è esperienza, riflessione e azione; si impara facendo ('learning by doing').",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è il ruolo dell'insegnante secondo Dewey?",
+    "b": "Facilitatore dell’esperienza e guida nella riflessione; crea ambienti di apprendimento attivi e cooperativi.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi sviluppa il metodo dei progetti ('project method')?",
+    "b": "William Heard Kilpatrick, allievo di Dewey, che propone attività centrate su compiti reali e significativi.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa propone Helen Parkhurst nel Dalton Plan?",
+    "b": "Un’organizzazione del lavoro individuale per obiettivi, in cui l’allievo gestisce autonomamente il proprio percorso.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Che cos'è il metodo Montessori?",
+    "b": "Un approccio educativo basato su materiali sensoriali, libertà operativa e rispetto per i tempi del bambino.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Come definisce Maria Montessori l’insegnante?",
+    "b": "Come 'guida silenziosa', che osserva e interviene solo quando necessario per favorire l’autonomia.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è il principio alla base della pedagogia di Decroly?",
+    "b": "L'apprendimento si costruisce intorno a 'centri di interesse' che uniscono conoscenze e bisogni del bambino.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Che cos’è l’educazione cooperativa di Freinet?",
+    "b": "Un modello che promuove la collaborazione, il lavoro manuale e l’espressione personale attraverso tecniche come la stampa scolastica.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è l’obiettivo dell’attivismo pedagogico?",
+    "b": "Rendere l’alunno protagonista del proprio apprendimento attraverso l’esperienza e la partecipazione attiva.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi è il principale rappresentante della pedagogia non direttiva?",
+    "b": "Carl Rogers, che valorizza l’autorealizzazione e la relazione empatica tra insegnante e allievo.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Che cosa intende Rogers per 'clima facilitante'?",
+    "b": "Un ambiente basato su empatia, accettazione incondizionata e autenticità dell’insegnante.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è l’idea centrale della 'pedagogia degli oppressi' di Paulo Freire?",
+    "b": "L’educazione deve promuovere la coscientizzazione e la libertà attraverso il dialogo e la partecipazione critica.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Che cosa critica Illich nella scuola tradizionale?",
+    "b": "La considera un sistema che riproduce le disuguaglianze sociali e propone modelli di apprendimento informali e comunitari.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi rappresenta il neoumanesimo pedagogico italiano del Novecento?",
+    "b": "Aldo Agazzi e Giovanni Maria Bertin, che rivalutano i valori etici e la formazione integrale della persona.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è la finalità dell’educazione secondo Bertin?",
+    "b": "La formazione di una personalità libera e responsabile, capace di scelta consapevole.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa caratterizza la pedagogia cattolica contemporanea?",
+    "b": "L’integrazione tra fede e cultura, la centralità della persona e la funzione educativa della comunità.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa si intende per 'pedagogia critica'?",
+    "b": "Una prospettiva che vede l’educazione come strumento di emancipazione sociale e di trasformazione della realtà.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi è Jerome Bruner nel panorama pedagogico?",
+    "b": "Uno psicologo e pedagogista che sottolinea il ruolo della scoperta, della rappresentazione e del linguaggio nell’apprendimento.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Che cosa significa 'curricolo a spirale' in Bruner?",
+    "b": "Un curricolo che riprende gli stessi concetti a livelli crescenti di complessità nel corso dello sviluppo.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è il concetto chiave di Vygotskij per la didattica?",
+    "b": "La Zona di Sviluppo Prossimale (ZSP), che rappresenta lo spazio tra ciò che l’alunno sa fare da solo e ciò che può fare con aiuto.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa si intende per 'scaffolding'?",
+    "b": "Il sostegno temporaneo fornito dall’insegnante o dal pari per facilitare l’apprendimento, secondo l’approccio socio-costruttivista.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi ha proposto l'apprendimento per scoperta?",
+    "b": "Jerome Bruner, che valorizza la costruzione autonoma della conoscenza attraverso l’esplorazione e la riflessione.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Che cosa caratterizza il metodo Reggio Emilia di Loris Malaguzzi?",
+    "b": "Un approccio centrato sull’espressione dei 'cento linguaggi del bambino' e sull’apprendimento come processo collettivo.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi introduce il concetto di educazione permanente?",
+    "b": "Paul Lengrand e Edgar Faure, che negli anni ’70 promuovono l’idea di un apprendimento lungo tutto l’arco della vita.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Qual è il contributo di Morin al pensiero educativo?",
+    "b": "La complessità: l’educazione deve sviluppare la capacità di collegare e integrare i saperi per comprendere la realtà.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa si intende per educazione olistica?",
+    "b": "Un approccio che mira allo sviluppo integrale della persona: cognitivo, emotivo, sociale e spirituale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi è il pedagogista del metodo di progetto in Italia?",
+    "b": "Aldo Visalberghi, che promuove la ricerca educativa e la didattica come progettazione scientifica.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Quale ruolo attribuisce Don Milani alla scuola?",
+    "b": "Strumento di giustizia sociale e di emancipazione per i poveri; educazione come diritto universale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cosa rappresenta l’esperienza di Barbiana?",
+    "b": "Un modello di scuola popolare fondata su partecipazione, dialogo e impegno civile.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Chi sostiene la necessità di un’educazione alla complessità?",
+    "b": "Edgar Morin, che invita a superare la frammentazione del sapere per formare menti critiche e interconnesse.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Che cosa si intende per educazione interculturale?",
+    "b": "Un approccio che promuove il dialogo, il rispetto reciproco e la valorizzazione delle diversità culturali.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  }
 ]
