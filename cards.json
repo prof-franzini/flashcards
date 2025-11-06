@@ -1,0 +1,16 @@
+[
+  { "a": "Jean Piaget", "b": "Stadi dello sviluppo cognitivo; apprendimento come costruzione individuale; pre-operatorio 2–7 anni, operazioni concrete 7–11, formali 11+" , "tags": ["sviluppo","cognitivo"] },
+  { "a": "Lev Vygotskij", "b": "Zona di Sviluppo Prossimale (ZPD) e scaffolding; centralità del linguaggio e dell'interazione sociale", "tags": ["socio-costruttivismo"] },
+  { "a": "Jerome Bruner", "b": "Apprendimento per scoperta; rappresentazioni enattiva-iconica-simbolica; spirale curricolare", "tags": ["didattica","rappresentazioni"] },
+  { "a": "David Ausubel", "b": "Apprendimento significativo; organizzatori anticipatori; ruolo delle conoscenze pregresse", "tags": ["significativo"] },
+  { "a": "Albert Bandura", "b": "Apprendimento sociale/osservativo (modellamento), autoefficacia", "tags": ["motivazione"] },
+  { "a": "B.F. Skinner", "b": "Condizionamento operante; rinforzo positivo/negativo; programmi di rinforzo", "tags": ["comportamentismo"] },
+  { "a": "Carl Rogers", "b": "Apprendimento centrato sullo studente; clima facilitante; autenticità ed empatia", "tags": ["umanistica"] },
+  { "a": "Howard Gardner", "b": "Teoria delle intelligenze multiple (logico-matematica, linguistica, spaziale, ecc.)", "tags": ["differenziazione"] },
+  { "a": "Benjamin Bloom", "b": "Tassonomia degli obiettivi educativi (ricordare→creare) e Mastery Learning", "tags": ["valutazione"] },
+  { "a": "John Dewey", "b": "Learning by doing; scuola come comunità democratica; esperienza e riflessione", "tags": ["attivo","laboratoriale"] },
+  { "a": "Maria Montessori", "b": "Autoeducazione, ambiente preparato, materiali autocorrettivi, ruolo dell'osservazione", "tags": ["metodo"] },
+  { "a": "Viktor Lowenfeld", "b": "Stadi dello sviluppo del disegno infantile", "tags": ["arte","sviluppo"] },
+  { "a": "Robert Gagné", "b": "Nove eventi dell'istruzione; condizioni dell'apprendimento", "tags": ["istruzione"] },
+  { "a": "Lev Semënovič Vygotskij", "b": "Mediazione culturale degli strumenti e dei segni", "tags": ["socio-culturale"], "hint": "Variante nome completa" }
+]
