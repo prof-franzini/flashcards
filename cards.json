@@ -1,420 +1,365 @@
 [
   {
-    "a": "Quale opera di Rousseau segna la nascita della pedagogia moderna?",
-    "b": "L'Émile (1762), in cui Rousseau propone un'educazione naturale che rispetti i tempi e la libertà del bambino.",
+    "a": "Jean-Jacques Rousseau",
+    "b": "L'Émile (1762) segna la nascita della pedagogia moderna, basata sull'educazione naturale e sul rispetto dei tempi del bambino.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa significa per Rousseau 'seguire la natura' nell'educazione?",
-    "b": "Rispettare il ritmo naturale di sviluppo del bambino e proteggerlo dalle influenze corrotte della società.",
+    "a": "Educazione naturale di Rousseau",
+    "b": "Si fonda sul rispetto del ritmo naturale di sviluppo del bambino e sulla protezione dalle influenze negative della società.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi introduce il concetto di 'istruzione educativa'?",
-    "b": "Johann Friedrich Herbart, che considera la pedagogia una scienza basata su psicologia ed etica.",
+    "a": "Johann Friedrich Herbart",
+    "b": "Introduce il concetto di istruzione educativa, basando la pedagogia su psicologia ed etica.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Quali sono le fasi del processo didattico secondo Herbart?",
+    "a": "Fasi del processo didattico di Herbart",
     "b": "Preparazione, presentazione, associazione, generalizzazione e applicazione.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è il contributo principale di Pestalozzi alla pedagogia?",
-    "b": "Ha unito istruzione e educazione morale, valorizzando l’intuizione e l’esperienza concreta come base dell’apprendimento.",
+    "a": "Johann Heinrich Pestalozzi",
+    "b": "Unisce istruzione e educazione morale, valorizzando intuizione ed esperienza concreta come base dell’apprendimento.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa caratterizza la pedagogia positivista?",
-    "b": "Un approccio scientifico e sperimentale che considera l’educazione come strumento di progresso sociale.",
+    "a": "Pedagogia positivista",
+    "b": "Approccio scientifico e sperimentale che considera l’educazione strumento di progresso sociale.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "In cosa consiste il pragmatismo pedagogico di Dewey?",
-    "b": "L’educazione è esperienza, riflessione e azione; si impara facendo ('learning by doing').",
+    "a": "John Dewey",
+    "b": "Propone un pragmatismo educativo fondato sull’esperienza, la riflessione e l’azione: learning by doing.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è il ruolo dell'insegnante secondo Dewey?",
-    "b": "Facilitatore dell’esperienza e guida nella riflessione; crea ambienti di apprendimento attivi e cooperativi.",
+    "a": "Ruolo dell’insegnante secondo Dewey",
+    "b": "Facilitatore dell’esperienza e guida nella riflessione, promotore di ambienti di apprendimento attivi e cooperativi.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi sviluppa il metodo dei progetti ('project method')?",
-    "b": "William Heard Kilpatrick, allievo di Dewey, che propone attività centrate su compiti reali e significativi.",
+    "a": "William Heard Kilpatrick",
+    "b": "Elabora il metodo dei progetti (project method), basato su compiti reali e significativi.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa propone Helen Parkhurst nel Dalton Plan?",
-    "b": "Un’organizzazione del lavoro individuale per obiettivi, in cui l’allievo gestisce autonomamente il proprio percorso.",
+    "a": "Helen Parkhurst",
+    "b": "Autrice del Dalton Plan, che favorisce l’apprendimento individuale e l’autonomia dell’alunno.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Che cos'è il metodo Montessori?",
-    "b": "Un approccio educativo basato su materiali sensoriali, libertà operativa e rispetto per i tempi del bambino.",
+    "a": "Maria Montessori",
+    "b": "Crea un metodo educativo fondato su materiali sensoriali, libertà operativa e rispetto per i tempi del bambino.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Come definisce Maria Montessori l’insegnante?",
-    "b": "Come 'guida silenziosa', che osserva e interviene solo quando necessario per favorire l’autonomia.",
+    "a": "Ruolo dell’insegnante per Montessori",
+    "b": "Figura di guida silenziosa che osserva e interviene solo per favorire l’autonomia del bambino.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è il principio alla base della pedagogia di Decroly?",
-    "b": "L'apprendimento si costruisce intorno a 'centri di interesse' che uniscono conoscenze e bisogni del bambino.",
+    "a": "Ovide Decroly",
+    "b": "Elabora la pedagogia dei centri di interesse, basata sull’integrazione tra bisogni e conoscenze del bambino.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Che cos’è l’educazione cooperativa di Freinet?",
-    "b": "Un modello che promuove la collaborazione, il lavoro manuale e l’espressione personale attraverso tecniche come la stampa scolastica.",
+    "a": "Célestin Freinet",
+    "b": "Promuove un’educazione cooperativa attraverso lavoro manuale, collaborazione e tecniche espressive.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è l’obiettivo dell’attivismo pedagogico?",
-    "b": "Rendere l’alunno protagonista del proprio apprendimento attraverso l’esperienza e la partecipazione attiva.",
+    "a": "Attivismo pedagogico",
+    "b": "Movimento che pone l’alunno al centro dell’apprendimento attraverso esperienze concrete e partecipazione attiva.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi è il principale rappresentante della pedagogia non direttiva?",
-    "b": "Carl Rogers, che valorizza l’autorealizzazione e la relazione empatica tra insegnante e allievo.",
+    "a": "Carl Rogers",
+    "b": "Fondatore della pedagogia non direttiva, centrata sull’autorealizzazione e sulla relazione empatica.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Che cosa intende Rogers per 'clima facilitante'?",
-    "b": "Un ambiente basato su empatia, accettazione incondizionata e autenticità dell’insegnante.",
+    "a": "Clima facilitante secondo Rogers",
+    "b": "Ambiente educativo basato su empatia, accettazione incondizionata e autenticità dell’insegnante.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è l’idea centrale della 'pedagogia degli oppressi' di Paulo Freire?",
-    "b": "L’educazione deve promuovere la coscientizzazione e la libertà attraverso il dialogo e la partecipazione critica.",
+    "a": "Paulo Freire",
+    "b": "Elabora la pedagogia degli oppressi, incentrata su dialogo, libertà e coscientizzazione.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Che cosa critica Illich nella scuola tradizionale?",
-    "b": "La considera un sistema che riproduce le disuguaglianze sociali e propone modelli di apprendimento informali e comunitari.",
+    "a": "Ivan Illich",
+    "b": "Critica la scuola tradizionale come riproduttrice di disuguaglianze e propone modelli di apprendimento informale.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi rappresenta il neoumanesimo pedagogico italiano del Novecento?",
-    "b": "Aldo Agazzi e Giovanni Maria Bertin, che rivalutano i valori etici e la formazione integrale della persona.",
+    "a": "Aldo Agazzi e Giovanni Maria Bertin",
+    "b": "Esponenti del neoumanesimo pedagogico, valorizzano la formazione integrale e i valori etici.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è la finalità dell’educazione secondo Bertin?",
-    "b": "La formazione di una personalità libera e responsabile, capace di scelta consapevole.",
+    "a": "Giovanni Maria Bertin",
+    "b": "Concepisce l’educazione come formazione di una personalità libera e responsabile.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa caratterizza la pedagogia cattolica contemporanea?",
-    "b": "L’integrazione tra fede e cultura, la centralità della persona e la funzione educativa della comunità.",
+    "a": "Pedagogia cattolica contemporanea",
+    "b": "Integra fede e cultura, pone al centro la persona e valorizza la comunità educativa.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa si intende per 'pedagogia critica'?",
-    "b": "Una prospettiva che vede l’educazione come strumento di emancipazione sociale e di trasformazione della realtà.",
+    "a": "Pedagogia critica",
+    "b": "Concepisce l’educazione come strumento di emancipazione e trasformazione sociale.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi è Jerome Bruner nel panorama pedagogico?",
-    "b": "Uno psicologo e pedagogista che sottolinea il ruolo della scoperta, della rappresentazione e del linguaggio nell’apprendimento.",
+    "a": "Jerome Bruner",
+    "b": "Sottolinea il ruolo della scoperta, del linguaggio e della rappresentazione nell’apprendimento.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Che cosa significa 'curricolo a spirale' in Bruner?",
-    "b": "Un curricolo che riprende gli stessi concetti a livelli crescenti di complessità nel corso dello sviluppo.",
+    "a": "Curricolo a spirale di Bruner",
+    "b": "Ripresa progressiva degli stessi concetti con crescente complessità nel corso dello sviluppo.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è il concetto chiave di Vygotskij per la didattica?",
-    "b": "La Zona di Sviluppo Prossimale (ZSP), che rappresenta lo spazio tra ciò che l’alunno sa fare da solo e ciò che può fare con aiuto.",
+    "a": "Lev Vygotskij",
+    "b": "Introduce la Zona di Sviluppo Prossimale (ZSP), spazio tra autonomia e aiuto educativo.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa si intende per 'scaffolding'?",
-    "b": "Il sostegno temporaneo fornito dall’insegnante o dal pari per facilitare l’apprendimento, secondo l’approccio socio-costruttivista.",
+    "a": "Scaffolding",
+    "b": "Sostegno temporaneo fornito per facilitare l’apprendimento e l’autonomia cognitiva.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi ha proposto l'apprendimento per scoperta?",
-    "b": "Jerome Bruner, che valorizza la costruzione autonoma della conoscenza attraverso l’esplorazione e la riflessione.",
+    "a": "Apprendimento per scoperta di Bruner",
+    "b": "Valorizza la costruzione autonoma della conoscenza tramite esplorazione e riflessione.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Che cosa caratterizza il metodo Reggio Emilia di Loris Malaguzzi?",
-    "b": "Un approccio centrato sull’espressione dei 'cento linguaggi del bambino' e sull’apprendimento come processo collettivo.",
+    "a": "Loris Malaguzzi",
+    "b": "Ideatore del metodo Reggio Emilia, basato sui cento linguaggi del bambino e sull’apprendimento collettivo.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi introduce il concetto di educazione permanente?",
-    "b": "Paul Lengrand e Edgar Faure, che negli anni ’70 promuovono l’idea di un apprendimento lungo tutto l’arco della vita.",
+    "a": "Paul Lengrand ed Edgar Faure",
+    "b": "Promuovono l’educazione permanente e l’apprendimento lungo tutto l’arco della vita.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Qual è il contributo di Morin al pensiero educativo?",
-    "b": "La complessità: l’educazione deve sviluppare la capacità di collegare e integrare i saperi per comprendere la realtà.",
+    "a": "Edgar Morin",
+    "b": "Introduce il concetto di complessità come principio educativo.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa si intende per educazione olistica?",
-    "b": "Un approccio che mira allo sviluppo integrale della persona: cognitivo, emotivo, sociale e spirituale.",
+    "a": "Educazione olistica",
+    "b": "Approccio orientato allo sviluppo integrale della persona: cognitivo, emotivo, sociale e spirituale.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi è il pedagogista del metodo di progetto in Italia?",
-    "b": "Aldo Visalberghi, che promuove la ricerca educativa e la didattica come progettazione scientifica.",
+    "a": "Aldo Visalberghi",
+    "b": "Promuove la didattica come progettazione e la ricerca educativa scientifica.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Quale ruolo attribuisce Don Milani alla scuola?",
-    "b": "Strumento di giustizia sociale e di emancipazione per i poveri; educazione come diritto universale.",
+    "a": "Don Lorenzo Milani",
+    "b": "Concepì la scuola come strumento di giustizia sociale e di emancipazione dei poveri.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Cosa rappresenta l’esperienza di Barbiana?",
-    "b": "Un modello di scuola popolare fondata su partecipazione, dialogo e impegno civile.",
+    "a": "Scuola di Barbiana",
+    "b": "Esempio di scuola popolare fondata su partecipazione, dialogo e impegno civile.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Chi sostiene la necessità di un’educazione alla complessità?",
-    "b": "Edgar Morin, che invita a superare la frammentazione del sapere per formare menti critiche e interconnesse.",
+    "a": "Educazione interculturale",
+    "b": "Promuove dialogo, rispetto reciproco e valorizzazione delle diversità culturali.",
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
-    "a": "Che cosa si intende per educazione interculturale?",
-    "b": "Un approccio che promuove il dialogo, il rispetto reciproco e la valorizzazione delle diversità culturali.",
-    "area": "Pedagogia generale e storia della pedagogia"
-  },
-  {
-    "a": "Chi è il fondatore della teoria dello sviluppo cognitivo?",
-    "b": "Jean Piaget, che descrive lo sviluppo dell’intelligenza come un processo di costruzione attiva attraverso fasi successive.",
+    "a": "Jean Piaget",
+    "b": "Elabora la teoria dello sviluppo cognitivo in fasi progressive dell’intelligenza.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Quali sono le quattro fasi dello sviluppo cognitivo secondo Piaget?",
-    "b": "Sensomotoria (0-2), preoperatoria (2-7), operazioni concrete (7-11), operazioni formali (dai 12 anni).",
+    "a": "Fasi dello sviluppo cognitivo di Piaget",
+    "b": "Sensomotoria, preoperatoria, operazioni concrete e operazioni formali.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa si intende per 'assimilazione' e 'accomodamento' in Piaget?",
-    "b": "L’assimilazione integra nuove esperienze negli schemi esistenti; l’accomodamento modifica gli schemi per adattarsi al nuovo.",
+    "a": "Assimilazione e accomodamento in Piaget",
+    "b": "Processi che integrano nuove esperienze e modificano gli schemi mentali.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa rappresenta l’equilibrazione in Piaget?",
-    "b": "Il meccanismo di autoregolazione che mantiene l’equilibrio tra assimilazione e accomodamento.",
+    "a": "Equilibrazione di Piaget",
+    "b": "Meccanismo che mantiene l’equilibrio tra assimilazione e accomodamento.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi è l’autore della teoria socio-costruttivista?",
-    "b": "Lev Vygotskij, che sottolinea l’importanza del contesto sociale e del linguaggio nello sviluppo cognitivo.",
+    "a": "Teoria socio-costruttivista di Vygotskij",
+    "b": "Evidenzia il ruolo del contesto sociale e del linguaggio nello sviluppo cognitivo.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cos’è la Zona di Sviluppo Prossimale (ZSP)?",
-    "b": "Lo spazio tra ciò che un bambino può fare da solo e ciò che può fare con l’aiuto di un adulto o un pari più esperto.",
+    "a": "Zona di Sviluppo Prossimale",
+    "b": "Distanza tra ciò che un bambino può fare da solo e ciò che può fare con aiuto.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa si intende per 'scaffolding'?",
-    "b": "Il sostegno temporaneo fornito all’allievo per aiutarlo a raggiungere un livello superiore di competenza.",
+    "a": "Scaffolding in ambito psicologico",
+    "b": "Sostegno educativo temporaneo che facilita la conquista dell’autonomia cognitiva.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha introdotto il concetto di apprendimento per scoperta?",
-    "b": "Jerome Bruner, che considera l’apprendimento un processo di costruzione attiva guidato dalla curiosità e dalla riflessione.",
+    "a": "Jerome Bruner",
+    "b": "Propone l’apprendimento per scoperta come costruzione attiva della conoscenza.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa propone Bruner nel 'curricolo a spirale'?",
-    "b": "Riprendere gli stessi concetti a livelli crescenti di complessità, adattandoli all’età e alle competenze dell’alunno.",
+    "a": "Curricolo a spirale di Bruner",
+    "b": "Concetti ripresi a livelli crescenti di complessità nel percorso di sviluppo.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha elaborato la teoria delle intelligenze multiple?",
-    "b": "Howard Gardner, che individua diverse forme di intelligenza (logico-matematica, linguistica, musicale, spaziale, interpersonale, ecc.).",
+    "a": "Howard Gardner",
+    "b": "Teorizza le intelligenze multiple (logico-matematica, linguistica, musicale, ecc.).",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Qual è il significato di 'intelligenza emotiva' secondo Daniel Goleman?",
-    "b": "La capacità di riconoscere, comprendere e gestire le proprie emozioni e quelle altrui.",
+    "a": "Daniel Goleman",
+    "b": "Introduce il concetto di intelligenza emotiva, capacità di gestire emozioni proprie e altrui.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha proposto la teoria triarchica dell’intelligenza?",
-    "b": "Robert Sternberg, che distingue tre componenti: analitica, creativa e pratica.",
+    "a": "Robert Sternberg",
+    "b": "Formula la teoria triarchica dell’intelligenza: analitica, creativa e pratica.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa studia la psicologia cognitiva?",
-    "b": "I processi mentali interni come percezione, memoria, attenzione, linguaggio e risoluzione dei problemi.",
+    "a": "Psicologia cognitiva",
+    "b": "Studia i processi mentali: percezione, memoria, linguaggio, attenzione e problem solving.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Quali sono i principali tipi di memoria?",
-    "b": "Sensoriale, a breve termine e a lungo termine.",
+    "a": "Memoria",
+    "b": "Si distingue in sensoriale, a breve termine e a lungo termine.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Qual è la differenza tra memoria esplicita e implicita?",
-    "b": "La memoria esplicita riguarda i ricordi consapevoli, quella implicita abilità e abitudini non consapevoli.",
+    "a": "Baddeley e Hitch",
+    "b": "Propongono il modello della memoria di lavoro con tre componenti principali.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha proposto il modello multicomponenziale della memoria di lavoro?",
-    "b": "Baddeley e Hitch, con tre componenti: esecutivo centrale, ciclo fonologico e taccuino visuo-spaziale.",
+    "a": "Sigmund Freud",
+    "b": "Fondatore della psicoanalisi e teorico di Es, Io e Super-io.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi è il fondatore della psicoanalisi?",
-    "b": "Sigmund Freud, che spiega la personalità come interazione tra Es, Io e Super-io.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Quali sono le fasi dello sviluppo psicosessuale secondo Freud?",
+    "a": "Fasi psicosessuali di Freud",
     "b": "Orale, anale, fallica, latenza e genitale.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Qual è il contributo di Anna Freud alla psicoanalisi infantile?",
-    "b": "Ha approfondito i meccanismi di difesa e l’importanza dell’Io nello sviluppo infantile.",
+    "a": "Anna Freud",
+    "b": "Approfondisce i meccanismi di difesa e l’Io nello sviluppo infantile.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha elaborato la teoria psicosociale dello sviluppo?",
-    "b": "Erik Erikson, che individua otto fasi di vita, ognuna caratterizzata da un conflitto evolutivo da risolvere.",
+    "a": "Erik Erikson",
+    "b": "Elabora la teoria psicosociale con otto fasi di sviluppo.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa rappresenta la crisi di 'identità vs confusione di ruoli' in Erikson?",
-    "b": "È la sfida dell’adolescente nel definire chi è e quale ruolo vuole assumere nella società.",
+    "a": "Crisi di identità in Erikson",
+    "b": "Sfida adolescenziale nel definire sé e il proprio ruolo sociale.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha teorizzato l’attaccamento?",
-    "b": "John Bowlby, secondo cui il legame affettivo primario tra bambino e caregiver è fondamentale per lo sviluppo emotivo.",
+    "a": "John Bowlby",
+    "b": "Teorizza l’attaccamento come legame affettivo primario essenziale.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Quali tipi di attaccamento ha individuato Mary Ainsworth?",
-    "b": "Sicuro, insicuro-evitante, insicuro-ambivalente e disorganizzato.",
+    "a": "Mary Ainsworth",
+    "b": "Identifica quattro tipi di attaccamento: sicuro, evitante, ambivalente, disorganizzato.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa dimostrano gli esperimenti di Harlow con le scimmie?",
-    "b": "Che il contatto affettivo è più importante del nutrimento nel legame di attaccamento.",
+    "a": "Harry Harlow",
+    "b": "Dimostra l’importanza del contatto affettivo nel legame madre-figlio.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha introdotto la teoria ecologica dello sviluppo?",
-    "b": "Urie Bronfenbrenner, con il modello dei sistemi concentrici: microsistema, mesosistema, esosistema e macrosistema.",
+    "a": "Urie Bronfenbrenner",
+    "b": "Introduce la teoria ecologica dello sviluppo umano basata su sistemi concentrici.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha elaborato la teoria dell’apprendimento sociale?",
-    "b": "Albert Bandura, che introduce il concetto di apprendimento per osservazione e il ruolo del modello.",
+    "a": "Albert Bandura",
+    "b": "Formula la teoria dell’apprendimento sociale basata sull’osservazione.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cos’è l’autoefficacia secondo Bandura?",
-    "b": "La convinzione dell’individuo di essere capace di affrontare efficacemente un compito.",
+    "a": "Autoefficacia di Bandura",
+    "b": "Coscienza della propria capacità di affrontare efficacemente un compito.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha proposto la teoria della motivazione umana basata sui bisogni?",
-    "b": "Abraham Maslow, con la piramide dei bisogni: fisiologici, sicurezza, appartenenza, stima e autorealizzazione.",
+    "a": "Abraham Maslow",
+    "b": "Elabora la piramide dei bisogni, culminante nell’autorealizzazione.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi è il fondatore del comportamentismo classico?",
-    "b": "Ivan Pavlov, che studiò il condizionamento classico attraverso esperimenti con i cani.",
+    "a": "Ivan Pavlov",
+    "b": "Rappresenta il comportamentismo classico e il condizionamento stimolo-risposta.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha formulato la teoria del condizionamento operante?",
-    "b": "B.F. Skinner, secondo cui il comportamento è influenzato dalle conseguenze (rinforzo e punizione).",
+    "a": "B.F. Skinner",
+    "b": "Formula la teoria del condizionamento operante basato su rinforzo e punizione.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha studiato l’apprendimento per insight?",
-    "b": "Wolfgang Köhler, che osservò nei primati la capacità di risolvere problemi improvvisamente ('aha moment').",
+    "a": "Wolfgang Köhler",
+    "b": "Studia l’apprendimento per insight osservando la risoluzione improvvisa di problemi.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha elaborato la teoria dell’apprendimento significativo?",
-    "b": "David Ausubel, che sostiene che l’apprendimento è efficace quando le nuove informazioni si collegano alle conoscenze pregresse.",
+    "a": "David Ausubel",
+    "b": "Teorizza l’apprendimento significativo basato su conoscenze pregresse.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi è l’autore del concetto di 'mappe concettuali'?",
-    "b": "Joseph Novak, che ha sviluppato uno strumento per rappresentare visivamente relazioni tra concetti.",
+    "a": "Joseph Novak",
+    "b": "Introduce le mappe concettuali per rappresentare relazioni tra concetti.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha proposto la teoria degli stili cognitivi?",
-    "b": "Jerome Kagan e Herman Witkin, che descrivono diverse modalità individuali di elaborare l’informazione.",
+    "a": "Reuven Feuerstein",
+    "b": "Elabora il metodo della mediazione cognitiva e del potenziamento.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha introdotto il concetto di mediazione cognitiva?",
-    "b": "Reuven Feuerstein, che considera l’insegnante un mediatore che guida e potenzia le funzioni cognitive dell’allievo.",
+    "a": "Giacomo Rizzolatti",
+    "b": "Scopre i neuroni specchio, base dell’empatia e dell’apprendimento per osservazione.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa sono i neuroni specchio?",
-    "b": "Cellule nervose che si attivano sia quando si compie un’azione sia quando si osserva la stessa azione compiuta da altri.",
+    "a": "Neuroni specchio",
+    "b": "Si attivano durante l’azione e l’osservazione, favorendo l’empatia.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Chi ha scoperto i neuroni specchio?",
-    "b": "Giacomo Rizzolatti e collaboratori a Parma negli anni '90.",
+    "a": "Lawrence Kohlberg",
+    "b": "Definisce i livelli dello sviluppo morale: preconvenzionale, convenzionale, postconvenzionale.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
   {
-    "a": "Cosa si intende per 'empatia' dal punto di vista neuroscientifico?",
-    "b": "La capacità di comprendere e condividere lo stato emotivo altrui grazie all’attivazione dei neuroni specchio.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Chi ha studiato lo sviluppo morale?",
-    "b": "Lawrence Kohlberg, che ha individuato tre livelli di sviluppo morale: preconvenzionale, convenzionale e postconvenzionale.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Chi è l’autore della teoria delle emozioni di base?",
-    "b": "Carroll Izard, che identifica emozioni universali come gioia, rabbia, paura e tristezza.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Cosa studia la psicologia sociale?",
-    "b": "I processi di influenza reciproca tra individuo e gruppo, come atteggiamenti, leadership, conformismo e cooperazione.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Chi ha introdotto il concetto di campo psicologico e dinamiche di gruppo?",
-    "b": "Kurt Lewin, che analizza il comportamento come funzione della persona e dell’ambiente (B = f(P,E)).",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Che cosa si intende per 'relazione educativa'?",
-    "b": "Un rapporto intenzionale e asimmetrico basato su comunicazione, fiducia e orientamento alla crescita dell’allievo.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Quali sono gli stili educativi principali?",
-    "b": "Autoritario, permissivo, trascurante e autore autorevole, quest’ultimo considerato il più equilibrato.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Chi ha studiato la comunicazione interpersonale e i suoi assiomi?",
-    "b": "Paul Watzlawick, che individua cinque assiomi fondamentali della comunicazione umana.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  },
-  {
-    "a": "Cosa significa 'non si può non comunicare'?",
-    "b": "È il primo assioma di Watzlawick: ogni comportamento in un contesto relazionale comunica qualcosa.",
-    "area": "Psicologia dello sviluppo e dell’apprendimento"
-  }
-]
-
-
-
+    "a": "Carroll Izard",
+    "b": "Individua le emozioni di base universali come gioia, rabbia e paura.",
+    "area": "Psicologia dello sviluppo e dell’appr
