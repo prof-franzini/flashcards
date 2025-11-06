@@ -33,23 +33,41 @@
   </header>
 
   <main class="center">
-    <div id="card-area" class="card-area">
-      <div class="card" id="card">
-        <div class="face front" id="card-front">
-          <div class="tag" id="card-direction">—</div>
-          <div class="text" id="card-question">Tocca o premi spazio per iniziare</div>
-          <div class="meta" id="card-meta"></div>
-        </div>
-        <div class="face back hidden" id="card-back">
-          <div class="tag">Risposta</div>
-          <div class="text" id="card-answer">—</div>
-        </div>
-      </div>
+    <!-- 🔹 Schermata di selezione area -->
+    <div id="area-select" class="area-select">
+      <h2>Seleziona una macro-area</h2>
+      <select id="area-dropdown">
+        <option value="tutte">Tutte le aree</option>
+        <option value="Pedagogia generale e storia della pedagogia">Pedagogia generale e storia della pedagogia</option>
+        <option value="Psicologia dello sviluppo e dell’apprendimento">Psicologia dello sviluppo e dell’apprendimento</option>
+        <option value="Didattica generale e metodologie">Didattica generale e metodologie</option>
+        <option value="Inclusione e bisogni educativi speciali (BES/DSA)">Inclusione e bisogni educativi speciali (BES/DSA)</option>
+        <option value="Normativa scolastica e organizzazione">Normativa scolastica e organizzazione</option>
+        <option value="Competenze digitali e cittadinanza">Competenze digitali e cittadinanza</option>
+      </select>
+      <button id="btn-start" class="primary">Inizia</button>
     </div>
 
-    <div class="buttons">
-      <button id="btn-toggle-review" class="secondary">Avvia Revisione</button>
-      <button id="btn-reset" class="ghost">Reset</button>
+    <!-- 🔹 Area di gioco -->
+    <div id="game-area" class="hidden">
+      <div id="card-area" class="card-area">
+        <div class="card" id="card">
+          <div class="face front" id="card-front">
+            <div class="tag" id="card-direction">—</div>
+            <div class="text" id="card-question">Tocca o premi spazio per iniziare</div>
+            <div class="meta" id="card-meta"></div>
+          </div>
+          <div class="face back hidden" id="card-back">
+            <div class="tag">Risposta</div>
+            <div class="text" id="card-answer">—</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="btn-toggle-review" class="secondary">Avvia Revisione</button>
+        <button id="btn-reset" class="ghost">Reset</button>
+      </div>
     </div>
   </main>
 
