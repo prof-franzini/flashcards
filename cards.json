@@ -180,6 +180,131 @@
     "area": "Pedagogia generale e storia della pedagogia"
   },
   {
+    "a": "Tommaso Moro",
+    "b": "Autore di 'Utopia' (1516), immagina una società ideale fondata su uguaglianza, istruzione comune e lavoro condiviso.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Tommaso Campanella",
+    "b": "In 'La Città del Sole' (1602) propone un modello educativo comunitario basato su lavoro, conoscenza e virtù civiche.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Giovanni Amos Comenio (Comenius)",
+    "b": "Padre della didattica moderna, sostiene l'educazione universale e scrive 'Didactica Magna'.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "John Locke",
+    "b": "In 'Pensieri sull'educazione' (1693) propone un'educazione empirista, fondata sull'esperienza e sull'abitudine morale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Giambattista Vico",
+    "b": "Sottolinea lo sviluppo storico e culturale della mente umana e l’importanza della fantasia nei processi educativi.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Johann Friedrich Herbart",
+    "b": "Elabora la pedagogia scientifica, collegando educazione, psicologia e morale; introduce il concetto di 'interesse'.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Ferrante Aporti",
+    "b": "Fondatore degli asili infantili in Italia, punta su educazione morale, religiosa e igienica dei bambini poveri.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "San Giovanni Bosco",
+    "b": "Elabora il sistema preventivo, fondato su ragione, religione e amorevolezza, per l'educazione dei giovani.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Claude Henri de Saint-Simon",
+    "b": "Teorico del socialismo utopistico, propone l'educazione come mezzo per la rigenerazione morale e sociale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Auguste Comte",
+    "b": "Fondatore del positivismo, vede l'educazione come trasmissione del sapere scientifico e progresso sociale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Robert Owen",
+    "b": "Riformatore sociale e pedagogico, fonda scuole per i figli degli operai basate su cooperazione e benessere.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Roberto Ardigò",
+    "b": "Esponente del positivismo italiano, valorizza l'educazione come sviluppo graduale dell’esperienza morale e intellettuale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Lev Tolstoj",
+    "b": "Crea scuole libere nei suoi possedimenti; promuove un'educazione spontanea, non coercitiva e morale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Cecil Reddie",
+    "b": "Fondatore della scuola di Abbotsholme, anticipa la scuola attiva e l'educazione integrale di corpo e spirito.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Margaret McMillan e Rachel McMillan",
+    "b": "Educatrici inglesi che promuovono gli asili all’aperto e la pedagogia igienico-sociale per l’infanzia.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Le sorelle Rosa e Carolina Agazzi",
+    "b": "Promuovono una scuola materna attiva e affettiva, con materiali poveri e valore educativo dell’ambiente.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Adolphe Ferrière",
+    "b": "Esponente della Scuola Attiva, sostiene la libertà, l’interesse e l’autonomia come motori dell’apprendimento.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Édouard Claparède",
+    "b": "Formula la legge dell’interesse, fondando la psicopedagogia sperimentale e l’École de Genève.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Stanislas Dehaene (aggiornamento contemporaneo)",
+    "b": "Neuroscienziato dell’apprendimento, studia i processi cognitivi di lettura e calcolo nella pedagogia moderna.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Ernst Meumann",
+    "b": "Fondatore della psicologia sperimentale applicata all’educazione, anticipa l’approccio scientifico dell’apprendimento.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Paulo Freire e la pedagogia degli oppressi",
+    "b": "Nel contesto del Novecento promuove un’educazione liberatrice fondata sul dialogo e sulla coscientizzazione.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "La Riforma Gentile (1923)",
+    "b": "Ridefinisce il sistema scolastico italiano secondo principi idealisti: centralità della cultura classica e dell’insegnante.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Benedetto Croce",
+    "b": "Teorizza l’identità tra educazione e vita spirituale; l’arte e la cultura formano l’individuo libero.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Giovanni Gentile",
+    "b": "Filosofo idealista, concepisce l’educazione come atto spirituale e autoconoscenza dell’anima.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Aldo Lombardo Radice",
+    "b": "Rappresenta un umanesimo pedagogico post-idealista, con attenzione alla scuola attiva e all’educazione morale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
     "a": "Jean Piaget",
     "b": "Elabora la teoria dello sviluppo cognitivo in fasi progressive dell’intelligenza.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
@@ -392,6 +517,226 @@
   {
     "a": "Assioma 'non si può non comunicare'",
     "b": "Ogni comportamento in un contesto relazionale comunica qualcosa, anche il silenzio o l’assenza di azione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "René Spitz",
+    "b": "Studia gli effetti della deprivazione affettiva nei bambini, descrivendo l’ospedalismo e l’importanza delle cure materne precoci.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Scuola psicofisiologica",
+    "b": "Analizza la percezione come risultato di processi neurofisiologici, ponendo le basi per la psicologia sperimentale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Scuola gestaltica",
+    "b": "Sostiene che la percezione non è somma di elementi, ma organizzazione di forme significative (la 'Gestalt').",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Scuola funzionalista",
+    "b": "Focalizzata sulla funzione adattiva della mente, considera il pensiero come strumento per agire sull’ambiente.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Scuola cognitivista",
+    "b": "Concepisce la mente come un elaboratore di informazioni; l’apprendimento implica codifica, memoria e recupero.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Broadbent",
+    "b": "Formula il modello del filtro attentivo (1958): le informazioni sensoriali vengono selezionate prima dell’elaborazione semantica.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Donald Broadbent – Teoria dell'attenzione",
+    "b": "Solo gli stimoli filtrati superano il collo di bottiglia dell’attenzione e vengono elaborati consapevolmente.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Atkinson e Shiffrin",
+    "b": "Propongono il modello multi-magazzino della memoria: sensoriale, a breve termine e a lungo termine.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Hermann Ebbinghaus",
+    "b": "Studia sperimentalmente la memoria e formula la curva dell’oblio, mostrando l’importanza della ripetizione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Galen",
+    "b": "Medico dell’antichità che associa i temperamenti umani ai quattro umori corporei: sangue, flemma, bile gialla e bile nera.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Scuola delle neuroscienze",
+    "b": "Studia il cervello e le basi biologiche del comportamento; include i neuroni specchio di Rizzolatti.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Spearman",
+    "b": "Formula la teoria bifattoriale dell’intelligenza: fattore generale g e fattori specifici s.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Thurstone",
+    "b": "Propone sette abilità mentali primarie (come comprensione verbale e ragionamento numerico) invece di un solo fattore g.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Carl Gustav Jung",
+    "b": "Introduce gli archetipi dell’inconscio collettivo e gli atteggiamenti introverso/estroverso.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Donald Winnicott",
+    "b": "Teorizza il 'madre sufficientemente buona' e lo 'spazio transizionale' come base per lo sviluppo del Sé.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Edward de Bono",
+    "b": "Elabora il concetto di pensiero laterale: capacità di risolvere problemi in modo creativo e non convenzionale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "J.P. Guilford",
+    "b": "Sviluppa il modello della struttura dell’intelletto con tre dimensioni: operazioni, contenuti e prodotti.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Noam Chomsky",
+    "b": "Critica il comportamentismo linguistico e propone la grammatica universale come capacità innata.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Felice Cimatti",
+    "b": "Studioso contemporaneo che riflette sul linguaggio e la mente come strumenti di relazione e costruzione del mondo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Jackendoff e Clark",
+    "b": "Analizzano il rapporto tra linguaggio, percezione e rappresentazioni mentali nel quadro della linguistica cognitiva.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Paul Ekman",
+    "b": "Identifica le emozioni di base universali e i micro-espressivi facciali associati.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Edward T. Hall",
+    "b": "Studia la prossemica: le distanze interpersonali come forma di comunicazione non verbale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Melanie Klein",
+    "b": "Elabora la teoria delle relazioni oggettuali, analizzando le fasi pre-edipiche e i meccanismi di scissione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Heinz Kohut",
+    "b": "Fondatore della psicologia del Sé, evidenzia l’importanza dell’empatia nella formazione dell’identità.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Margaret Mahler",
+    "b": "Studia il processo di separazione-individuazione del bambino e la nascita psicologica del Sé.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Daniel Stern",
+    "b": "Descrive lo sviluppo del Sé come processo intersoggettivo basato su interazioni precoci e sintonizzazione affettiva.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Urie Bronfenbrenner",
+    "b": "Formula la teoria ecologica dello sviluppo umano basata su sistemi concentrici (micro, meso, eso e macrosistema).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Tomkins e Izard",
+    "b": "Analizzano le emozioni come sistemi motivazionali di base legati all’espressione facciale e alla comunicazione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Albert Bandura – apprendimento sociale",
+    "b": "Dimostra che si apprende osservando modelli e imitando comportamenti; introduce il concetto di autoefficacia.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Lawrence Kohlberg",
+    "b": "Propone una teoria dello sviluppo morale in sei stadi progressivi, dal livello preconvenzionale a quello postconvenzionale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Gordon Allport",
+    "b": "Definisce la personalità come organizzazione dinamica di tratti e motivazioni che determinano il comportamento.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Henry Murray",
+    "b": "Elabora la teoria delle necessità psicologiche (needs) e delle pressioni ambientali (press).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Hans Eysenck",
+    "b": "Definisce tre dimensioni fondamentali della personalità: estroversione, nevroticismo e psicoticismo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "McCrae e Costa",
+    "b": "Propongono il modello dei Big Five: apertura, coscienziosità, estroversione, gradevolezza e stabilità emotiva.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Carl Rogers – psicologia umanistica",
+    "b": "Sottolinea il valore dell’autenticità, dell’empatia e dell’accettazione incondizionata nella relazione educativa.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Ivan Pavlov",
+    "b": "Scopre il condizionamento classico, base del comportamentismo: associazione tra stimolo neutro e risposta.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Edward Thorndike",
+    "b": "Formula la legge dell’effetto: i comportamenti seguiti da conseguenze positive tendono a ripetersi.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Wolfgang Köhler",
+    "b": "Dimostra l’apprendimento per insight: soluzione improvvisa di un problema dopo una fase di osservazione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Edward Tolman",
+    "b": "Sviluppa la teoria dell’apprendimento latente e le mappe cognitive negli animali e nell’uomo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "David Kolb",
+    "b": "Elabora il ciclo dell’apprendimento esperienziale: esperienza concreta, riflessione, concettualizzazione e sperimentazione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "John Dewey – apprendimento esperienziale",
+    "b": "Sostiene che si impara facendo: l’esperienza riflessiva è il cuore dell’apprendimento significativo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Joseph Novak",
+    "b": "Elabora le mappe concettuali per rappresentare relazioni tra concetti, basandosi sulla teoria di Ausubel.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Reuven Feuerstein",
+    "b": "Propone la teoria della modificabilità cognitiva e la mediazione come strumento di potenziamento mentale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Paul Watzlawick",
+    "b": "Analizza la comunicazione interpersonale e gli assiomi della pragmatica: 'non si può non comunicare'.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   }
 ]
