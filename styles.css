@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   margin: 0;
-  background: #fafafa;
+  background: #f5f7fa;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -9,15 +9,24 @@ body {
   overflow: hidden;
 }
 
+/* 🔹 Barra superiore */
 .topbar {
-  background: #004aad;
+  background: #0066cc;
   color: #fff;
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.topbar h1 {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* 🔹 Contenuto principale */
 .center {
   display: flex;
   flex-direction: column;
@@ -31,7 +40,7 @@ body {
   display: none;
 }
 
-/* 🔹 Nuovo layout pulsanti aree */
+/* 🔹 Sezione selezione aree */
 .area-container {
   width: 100%;
   max-width: 420px;
@@ -48,7 +57,7 @@ body {
   background: linear-gradient(90deg, #004aad, #0077ff);
   color: white;
   font-size: 1rem;
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 16px;
   border: none;
   margin-bottom: 1rem;
@@ -56,6 +65,11 @@ body {
   cursor: pointer;
 }
 
+.btn-all:active {
+  transform: scale(0.98);
+}
+
+/* 🔹 Griglia aree */
 .area-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -67,7 +81,7 @@ body {
   border: none;
   border-radius: 14px;
   padding: 1rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -92,10 +106,21 @@ body {
   cursor: not-allowed;
 }
 
-/* Colori per macroaree */
+/* 🔹 Colori per macroaree */
 .pedagogia { background: #4a90e2; }
 .psicologia { background: #50b074; }
 .metodologie { background: #f5a623; }
 .normativa { background: #d87300; }
 .inclusione { background: #9b59b6; }
 .digitali { background: #2c82c9; }
+
+/* 🔹 Footer sistemato */
+.footer {
+  text-align: center;
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  color: #777;
+  background: #f5f7fa;
+  position: relative;
+  bottom: 0;
+}
