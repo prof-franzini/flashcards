@@ -359,7 +359,39 @@
     "b": "Definisce i livelli dello sviluppo morale: preconvenzionale, convenzionale, postconvenzionale.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
   },
-  {
+    {
     "a": "Carroll Izard",
-    "b": "Individua le emozioni di base universali come gioia, rabbia e paura.",
-    "area": "Psicologia dello sviluppo e dell’appr
+    "b": "Individua le emozioni di base universali come gioia, rabbia, paura e tristezza.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Psicologia sociale",
+    "b": "Studia i processi di influenza reciproca tra individuo e gruppo: atteggiamenti, leadership, conformismo e cooperazione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Kurt Lewin",
+    "b": "Introduce il concetto di campo psicologico e analizza il comportamento come funzione della persona e dell’ambiente (B = f(P,E)).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Relazione educativa",
+    "b": "Rapporto intenzionale e asimmetrico fondato su comunicazione, fiducia e crescita personale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Stili educativi",
+    "b": "Autoritario, permissivo, trascurante e autorevole, quest’ultimo considerato il più equilibrato.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Paul Watzlawick",
+    "b": "Studia la comunicazione interpersonale e formula i cinque assiomi fondamentali della comunicazione umana.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Assioma 'non si può non comunicare'",
+    "b": "Ogni comportamento in un contesto relazionale comunica qualcosa, anche il silenzio o l’assenza di azione.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  }
+]
