@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flashcards – Concorso Scuola</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- 🔸 Open Graph / Anteprima link -->
+  <meta property="og:title" content="Flashcards – Concorso Scuola" />
+  <meta property="og:description" content="Allena la tua memoria su pedagogia, psicologia e metodologie didattiche per il concorso scuola." />
+  <meta property="og:image" content="https://prof-franzini.github.io/flashcards/preview.png" />
+  <meta property="og:url" content="https://prof-franzini.github.io/flashcards/" />
+  <meta property="og:type" content="website" />
+
+  <!-- 🔸 Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="preview.png" />
+  <meta name="apple-mobile-web-app-title" content="Flashcards" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+</head>
+
+<body>
+  <header class="topbar">
+    <h1>Flashcards – Concorso Scuola</h1>
+    <div class="stats">
+      <span id="count-remaining">Rimaste: 0</span>
+      <span id="count-review">Revisione: 0</span>
+    </div>
+  </header>
+
+  <!-- 🔹 Selezione area (NUOVA VERSIONE) -->
+  <main id="area-select" class="center">
+    <div class="area-container">
+      <button class="btn-all" data-area="tutte">📚 Tutte le aree</button>
+      <div class="area-buttons">
+        <button class="area-btn pedagogia" data-area="Pedagogia generale e storia della pedagogia">🎓<span>Pedagogia</span></button>
+        <button class="area-btn psicologia" data-area="Psicologia dello sviluppo e dell’apprendimento">🧠<span>Psicologia</span></button>
+        <button class="area-btn metodologie disabled" data-area="Metodologie e tecnologie didattiche">💡<span>Metodologie</span></button>
+        <button class="area-btn normativa disabled" data-area="Ordinamenti scolastici, educazione civica e normativa">⚖️<span>Normativa</span></button>
+        <button class="area-btn inclusione disabled" data-area="Inclusione e bisogni educativi speciali">♿<span>Inclusione</span></button>
+        <button class="area-btn digitali disabled" data-area="Competenze digitali e PNRR">💻<span>Digitali</span></button>
+      </div>
+    </div>
+  </main>
+
+  <!-- 🔹 Area di gioco -->
+  <main id="game-area" class="center hidden">
+    <div id="card-area" class="card-area">
+      <div class="card" id="card">
+        <div class="face front" id="card-front">
+          <div class="tag" id="card-direction">—</div>
+          <div class="text" id="card-question">Tocca o premi spazio per iniziare</div>
+          <div class="meta" id="card-meta"></div>
+        </div>
+        <div class="face back hidden" id="card-back">
+          <div class="tag">Risposta</div>
+          <div class="text" id="card-answer">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="btn-toggle-review" class="secondary">Avvia Revisione</button>
+      <button id="btn-reset" class="ghost">Reset</button>
+      <button id="btn-home" class="ghost">🏠 Menu principale</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 – Flashcards Concorso Scuola</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

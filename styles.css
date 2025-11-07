@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.topbar {
+  background: #004aad;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 🔹 Nuovo layout pulsanti aree */
+.area-container {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.btn-all {
+  width: 100%;
+  background: linear-gradient(90deg, #004aad, #0077ff);
+  color: white;
+  font-size: 1rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+  border: none;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+.area-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.area-btn {
+  border: none;
+  border-radius: 14px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.area-btn span {
+  margin-top: 0.4rem;
+}
+
+.area-btn:active, .btn-all:active {
+  transform: scale(0.97);
+}
+
+.area-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Colori per macroaree */
+.pedagogia { background: #4a90e2; }
+.psicologia { background: #50b074; }
+.metodologie { background: #f5a623; }
+.normativa { background: #d87300; }
+.inclusione { background: #9b59b6; }
+.digitali { background: #2c82c9; }
