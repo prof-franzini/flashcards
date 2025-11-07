@@ -13,10 +13,8 @@
   <meta property="og:url" content="https://prof-franzini.github.io/flashcards/" />
   <meta property="og:type" content="website" />
 
-  <!-- 🔸 Favicon standard -->
+  <!-- 🔸 Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
-
-  <!-- 🔸 Apple iOS icon / modalità web-app -->
   <link rel="apple-touch-icon" href="preview.png" />
   <meta name="apple-mobile-web-app-title" content="Flashcards" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,43 +30,37 @@
     </div>
   </header>
 
-  <main class="center">
-    <!-- 🔹 Schermata di selezione area -->
-    <div id="area-select" class="area-select">
-      <h2>Seleziona una macro-area</h2>
-      <select id="area-dropdown">
-        <option value="tutte">Tutte le aree</option>
-        <option value="Pedagogia generale e storia della pedagogia">Pedagogia generale e storia della pedagogia</option>
-        <option value="Psicologia dello sviluppo e dell’apprendimento">Psicologia dello sviluppo e dell’apprendimento</option>
-        <option value="Didattica generale e metodologie">Didattica generale e metodologie</option>
-        <option value="Inclusione e bisogni educativi speciali (BES/DSA)">Inclusione e bisogni educativi speciali (BES/DSA)</option>
-        <option value="Normativa scolastica e organizzazione">Normativa scolastica e organizzazione</option>
-        <option value="Competenze digitali e cittadinanza">Competenze digitali e cittadinanza</option>
-      </select>
-      <button id="btn-start" class="primary">Inizia</button>
-    </div>
+  <!-- 🔹 Selezione area -->
+  <main id="area-select" class="center">
+    <h2>Seleziona la macroarea</h2>
+    <select id="area-dropdown">
+      <option value="tutte">Tutte le aree</option>
+      <option value="Pedagogia generale e storia della pedagogia">Pedagogia generale e storia della pedagogia</option>
+      <option value="Psicologia dello sviluppo e dell’apprendimento">Psicologia dello sviluppo e dell’apprendimento</option>
+    </select>
+    <button id="btn-start">Inizia</button>
+  </main>
 
-    <!-- 🔹 Area di gioco -->
-    <div id="game-area" class="hidden">
-      <div id="card-area" class="card-area">
-        <div class="card" id="card">
-          <div class="face front" id="card-front">
-            <div class="tag" id="card-direction">—</div>
-            <div class="text" id="card-question">Tocca o premi spazio per iniziare</div>
-            <div class="meta" id="card-meta"></div>
-          </div>
-          <div class="face back hidden" id="card-back">
-            <div class="tag">Risposta</div>
-            <div class="text" id="card-answer">—</div>
-          </div>
+  <!-- 🔹 Area di gioco -->
+  <main id="game-area" class="center hidden">
+    <div id="card-area" class="card-area">
+      <div class="card" id="card">
+        <div class="face front" id="card-front">
+          <div class="tag" id="card-direction">—</div>
+          <div class="text" id="card-question">Tocca o premi spazio per iniziare</div>
+          <div class="meta" id="card-meta"></div>
+        </div>
+        <div class="face back hidden" id="card-back">
+          <div class="tag">Risposta</div>
+          <div class="text" id="card-answer">—</div>
         </div>
       </div>
+    </div>
 
-      <div class="buttons">
-  <button id="btn-toggle-review" class="secondary">Avvia Revisione</button>
-  <button id="btn-reset" class="ghost">Reset</button>
-  <button id="btn-home" class="ghost">🏠 Menu principale</button>
-</div>
+    <div class="buttons">
+      <button id="btn-toggle-review" class="secondary">Avvia Revisione</button>
+      <button id="btn-reset" class="ghost">Reset</button>
+      <button id="btn-home" class="ghost">🏠 Menu principale</button>
     </div>
   </main>
 
