@@ -1,29 +1,96 @@
-// Flashcards – Concorso Scuola (versione aggiornata con random e direzioni casuali)
+// Flashcards – Concorso Scuola (fix: random picking + random direction, robust loading)
 
 let cards = [];
 let currentIndex = 0;
 let reviewMode = false;
 let filteredCards = [];
-let currentDirection = "a2b"; // direzione corrente (a→b o b→a)
+let currentDirection = "a2b"; // a→b or b→a
+let cardsReady = false;
 
-// 🔹 Carica le carte dal file JSON
-fetch("cards.json")
-  .then(response => response.json())
-  .then(data => {
-    cards = data;
-  });
-
-// 🔹 Selezione area con nuovi pulsanti
-document.querySelectorAll(".area-btn, .btn-all").forEach(btn => {
-  btn.addEventListener("click", () => {
-    if (btn.classList.contains("disabled")) {
-      alert("Area in costruzione");
-      return;
-    }
-    const area = btn.dataset.area;
-    startGame(area);
-  });
+// 🔹 Init after DOM is ready
+window.addEventListener("DOMContentLoaded", () => {
+  loadCards();
+  wireUI();
 });
+
+async function loadCards() {
+  try {
+    const res = await fetch("cards.json");
+    const data = await res.json();
+    cards = data;
+    cardsReady = true;
+  } catch (e) {
+    console.error("Errore nel caricamento delle carte:", e);
+    alert("Impossibile caricare le carte.");
+  }
+}
+
+function wireUI() {
+  // Selezione area con nuovi pulsanti
+  document.querySelectorAll(".area-btn, .btn-all").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      if (btn.classList.contains("disabled")) {
+        alert("Area in costruzione");
+        return;
+      }
+      // Attendi che le carte siano pronte
+      if (!cardsReady) {
+        await waitForCards();
+      }
+      const area = btn.dataset.area;
+      startGame(area);
+    });
+  });
+
+  // Flip carta (prima tocco: mostra risposta; secondo tocco: passa alla prossima)
+  const cardEl = document.getElementById("card");
+  cardEl.addEventListener("click", () => {
+    const front = document.getElementById("card-front");
+    const back = document.getElementById("card-back");
+    const frontHidden = front.classList.contains("hidden");
+    if (frontHidden) {
+      // se stavo vedendo la risposta, vai alla prossima carta
+      nextCard();
+    } else {
+      // altrimenti mostra la risposta
+      front.classList.add("hidden");
+      back.classList.remove("hidden");
+    }
+  });
+
+  // Shortcut tastiera
+  document.body.addEventListener("keydown", e => {
+    if (e.code === "Space" || e.code === "ArrowRight") {
+      nextCard();
+    }
+  });
+
+  // Revisione e reset
+  document.getElementById("btn-toggle-review").addEventListener("click", () => {
+    reviewMode = !reviewMode;
+    document.getElementById("btn-toggle-review").textContent = reviewMode ? "Esci Revisione" : "Avvia Revisione";
+  });
+
+  document.getElementById("btn-reset").addEventListener("click", () => {
+    currentIndex = 0;
+    shuffleArray(filteredCards);
+    showCard();
+  });
+
+  document.getElementById("btn-home").addEventListener("click", () => {
+    document.getElementById("game-area").classList.add("hidden");
+    document.getElementById("area-select").classList.remove("hidden");
+  });
+}
+
+function waitForCards() {
+  return new Promise(resolve => {
+    const chk = () => {
+      if (cardsReady) resolve(); else setTimeout(chk, 50);
+    };
+    chk();
+  });
+}
 
 function startGame(area) {
   const selectArea = document.getElementById("area-select");
@@ -31,7 +98,7 @@ function startGame(area) {
   selectArea.classList.add("hidden");
   gameArea.classList.remove("hidden");
 
-  // Filtra e mescola casualmente
+  // Filtra e mescola casualmente (Fisher–Yates)
   if (area === "tutte") {
     filteredCards = [...cards];
   } else {
@@ -43,7 +110,6 @@ function startGame(area) {
   showCard();
 }
 
-// 🔹 Mostra la carta corrente
 function showCard() {
   if (filteredCards.length === 0) return;
 
@@ -51,11 +117,9 @@ function showCard() {
   const frontEl = document.getElementById("card-question");
   const backEl = document.getElementById("card-answer");
   const metaEl = document.getElementById("card-meta");
-  const directionEl = document.getElementById("card-direction");
 
-  // Direzione casuale
+  // Direzione casuale ad ogni carta
   currentDirection = Math.random() < 0.5 ? "a2b" : "b2a";
-
   if (currentDirection === "a2b") {
     frontEl.textContent = card.a;
     backEl.textContent = card.b;
@@ -65,41 +129,15 @@ function showCard() {
   }
 
   metaEl.textContent = card.area;
-  directionEl.textContent = "—";
-  document.getElementById("count-remaining").textContent =
-    "Rimaste: " + (filteredCards.length - currentIndex - 1);
+  document.getElementById("count-remaining").textContent = "Rimaste: " + (filteredCards.length - currentIndex - 1);
 
-  // Assicura che la carta parta dal lato frontale
+  // riparti sempre dal lato domanda
   document.getElementById("card-front").classList.remove("hidden");
   document.getElementById("card-back").classList.add("hidden");
 }
 
-// 🔹 Mescola un array (algoritmo Fisher–Yates)
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-// 🔹 Flip carta
-const cardEl = document.getElementById("card");
-cardEl.addEventListener("click", () => {
-  document.getElementById("card-front").classList.toggle("hidden");
-  document.getElementById("card-back").classList.toggle("hidden");
-});
-
-// 🔹 Avanza alla prossima carta
-document.body.addEventListener("keydown", e => {
-  if (e.code === "Space" || e.code === "ArrowRight") {
-    nextCard();
-  }
-});
-
-cardEl.addEventListener("dblclick", nextCard);
-
 function nextCard() {
+  if (filteredCards.length === 0) return;
   currentIndex++;
   if (currentIndex >= filteredCards.length) {
     currentIndex = 0;
@@ -108,21 +146,11 @@ function nextCard() {
   showCard();
 }
 
-// 🔹 Revisione e reset
-document.getElementById("btn-toggle-review").addEventListener("click", () => {
-  reviewMode = !reviewMode;
-  document.getElementById("btn-toggle-review").textContent = reviewMode
-    ? "Esci Revisione"
-    : "Avvia Revisione";
-});
-
-document.getElementById("btn-reset").addEventListener("click", () => {
-  currentIndex = 0;
-  shuffleArray(filteredCards);
-  showCard();
-});
-
-document.getElementById("btn-home").addEventListener("click", () => {
-  document.getElementById("game-area").classList.add("hidden");
-  document.getElementById("area-select").classList.remove("hidden");
-});
+// 🔹 Fisher–Yates shuffle
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
