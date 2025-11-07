@@ -17,7 +17,7 @@ const el = {
   countReview: document.getElementById('count-review'),
   btnReview: document.getElementById('btn-toggle-review'),
   btnReset: document.getElementById('btn-reset'),
-  btnHome: document.getElementById('btn-home'),
+  btnHome: document.getElementById('btn-home')
 };
 
 let allCards = [];
@@ -33,16 +33,20 @@ let selectedArea = 'tutte';
 // Caricamento carte
 // -----------------------------
 async function loadCards() {
-  const res = await fetch(DATA_URL);
-  const data = await res.json();
-  allCards = data.map((c, i) => ({
-    id: i,
-    a: c.a,
-    b: c.b,
-    area: c.area || 'Generale',
-    tags: c.tags || []
-  })).filter(c => c.a && c.b);
-  console.log("Carte caricate:", allCards.length);
+  try {
+    const res = await fetch(DATA_URL);
+    const data = await res.json();
+    allCards = data.map((c, i) => ({
+      id: i,
+      a: c.a,
+      b: c.b,
+      area: c.area || 'Generale',
+      tags: c.tags || []
+    })).filter(c => c.a && c.b);
+    console.log("Carte caricate:", allCards.length);
+  } catch (e) {
+    alert("Errore nel caricamento delle carte. Verifica il file cards.json.");
+  }
 }
 
 // -----------------------------
@@ -54,12 +58,7 @@ el.btnStart.addEventListener('click', () => {
 });
 
 function startArea(area) {
-  cards = area === 'tutte'
-  ? [...allCards]
-  : allCards.filter(c =>
-      c.area.trim().toLowerCase().replace(/['’]/g, "'") ===
-      area.trim().toLowerCase().replace(/['’]/g, "'")
-    );
+  cards = area === 'tutte' ? [...allCards] : allCards.filter(c => c.area === area);
 
   if (cards.length === 0) {
     alert(`Nessuna carta trovata per l'area: ${area}`);
@@ -175,7 +174,6 @@ el.btnReview.addEventListener('click', () => {
 el.btnReset.addEventListener('click', reset);
 
 el.btnHome.addEventListener('click', () => {
-  // Torna al menu principale
   el.gameArea.classList.add('hidden');
   el.areaSelect.classList.remove('hidden');
   state = 'idle';
