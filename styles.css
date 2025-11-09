@@ -26,7 +26,6 @@ body {
   text-align: center;
 }
 
-/* 🔹 Contenuto principale */
 .center {
   display: flex;
   flex-direction: column;
@@ -106,7 +105,7 @@ body {
   cursor: not-allowed;
 }
 
-/* 🔹 Colori per macroaree */
+/* 🔹 Colori macroaree */
 .pedagogia { background: #4a90e2; }
 .psicologia { background: #50b074; }
 .metodologie { background: #f5a623; }
@@ -114,13 +113,153 @@ body {
 .inclusione { background: #9b59b6; }
 .digitali { background: #2c82c9; }
 
-/* 🔹 Footer sistemato */
+/* 🔹 Selettore direzione */
+.direction-selector {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.direction-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.3rem;
+}
+
+.dir-btn {
+  background: #e0e6ef;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.dir-btn.selected {
+  background: #0066cc;
+  color: white;
+  border-color: #004999;
+}
+
+.dir-btn:hover {
+  background: #d0d8e5;
+}
+
+/* 🔹 Area di gioco */
+.card-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1rem;
+  perspective: 1000px;
+}
+
+.card {
+  width: 320px;
+  min-height: 200px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.face {
+  padding: 1.5rem;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.face.back {
+  background: #eaf2ff;
+}
+
+.text {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.tag {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+}
+
+/* 🔹 Pulsanti gioco */
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+button.secondary {
+  background: #fff;
+  color: #0066cc;
+  border: 2px solid #0066cc;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button.ghost {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button.secondary:hover {
+  background: #0066cc;
+  color: white;
+}
+
+/* 🔹 Footer */
 .footer {
   text-align: center;
   padding: 0.4rem;
   font-size: 0.75rem;
   color: #777;
   background: #f5f7fa;
-  position: relative;
-  bottom: 0;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 480px) {
+  .area-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 90%;
+    min-height: 180px;
+  }
+
+  .btn-all {
+    font-size: 0.9rem;
+  }
+
+  .topbar h1 {
+    font-size: 0.9rem;
+  }
 }
