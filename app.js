@@ -1,12 +1,10 @@
-// Flashcards – Concorso Scuola (versione stabile: flashcard reale, coppie coerenti, senza macroarea)
+// Flashcards – Concorso Scuola (versione stabile definitiva: coppie A→B fisse, no random direction, no macroarea)
 
 let cards = [];
 let currentIndex = 0;
-let reviewMode = false;
 let filteredCards = [];
 let showingAnswer = false;
 let cardsReady = false;
-let currentDirection = "a2b"; // direzione della carta corrente
 
 // 🔹 Inizializzazione
 window.addEventListener("DOMContentLoaded", () => {
@@ -44,17 +42,17 @@ function wireUI() {
   const cardEl = document.getElementById("card");
   cardEl.addEventListener("click", () => {
     if (!showingAnswer) {
-      // mostra risposta della stessa carta
+      // Mostra risposta
       document.getElementById("card-front").classList.add("hidden");
       document.getElementById("card-back").classList.remove("hidden");
       showingAnswer = true;
     } else {
-      // passa alla prossima carta
+      // Passa alla prossima carta
       nextCard();
     }
   });
 
-  // Tasti
+  // Tasti scorciatoia
   document.body.addEventListener("keydown", e => {
     if (e.code === "Space" || e.code === "ArrowRight") {
       if (!showingAnswer) {
@@ -67,12 +65,7 @@ function wireUI() {
     }
   });
 
-  // Revisione e reset
-  document.getElementById("btn-toggle-review").addEventListener("click", () => {
-    reviewMode = !reviewMode;
-    document.getElementById("btn-toggle-review").textContent = reviewMode ? "Esci Revisione" : "Avvia Revisione";
-  });
-
+  // Pulsanti
   document.getElementById("btn-reset").addEventListener("click", () => {
     currentIndex = 0;
     shuffleArray(filteredCards);
@@ -114,25 +107,17 @@ function showCard() {
   const frontEl = document.getElementById("card-question");
   const backEl = document.getElementById("card-answer");
 
-  // Direzione casuale UNA volta per carta
-  currentDirection = Math.random() < 0.5 ? "a2b" : "b2a";
-
-  if (currentDirection === "a2b") {
-    frontEl.textContent = card.a;
-    backEl.textContent = card.b;
-  } else {
-    frontEl.textContent = card.b;
-    backEl.textContent = card.a;
-  }
-
-  // Rimuoviamo l'area (macroarea)
-  // const metaEl = document.getElementById("card-meta");
-  // metaEl.textContent = "";
+  // Mostra sempre A → B
+  frontEl.textContent = card.a;
+  backEl.textContent = card.b;
 
   document.getElementById("count-remaining").textContent =
     "Rimaste: " + (filteredCards.length - currentIndex - 1);
 
-  // Mostra sempre domanda per prima
+  // Macroarea rimossa
+  // document.getElementById("card-meta").textContent = "";
+
+  // Mostra lato domanda
   document.getElementById("card-front").classList.remove("hidden");
   document.getElementById("card-back").classList.add("hidden");
   showingAnswer = false;
