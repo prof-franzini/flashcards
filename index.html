@@ -6,14 +6,13 @@
   <title>Flashcards – Concorso Scuola</title>
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- 🔸 Open Graph / Anteprima link -->
+  <!-- 🔸 Open Graph / Anteprima -->
   <meta property="og:title" content="Flashcards – Concorso Scuola" />
   <meta property="og:description" content="Allena la tua memoria su pedagogia, psicologia e metodologie didattiche per il concorso scuola." />
   <meta property="og:image" content="https://prof-franzini.github.io/flashcards/preview.png" />
   <meta property="og:url" content="https://prof-franzini.github.io/flashcards/" />
   <meta property="og:type" content="website" />
 
-  <!-- 🔸 Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="preview.png" />
   <meta name="apple-mobile-web-app-title" content="Flashcards" />
@@ -25,15 +24,15 @@
   <header class="topbar">
     <h1>Flashcards – Concorso Scuola</h1>
     <div class="stats">
-      <span id="count-remaining">Rimaste: 0</span>
-      <span id="count-review">Revisione: 0</span>
+      <span id="count-remaining" aria-live="polite">Rimaste: 0</span>
     </div>
   </header>
 
-  <!-- 🔹 Selezione area (NUOVA VERSIONE) -->
+  <!-- 🔹 Selezione area -->
   <main id="area-select" class="center">
     <div class="area-container">
       <button class="btn-all" data-area="tutte">📚 Tutte le aree</button>
+
       <div class="area-buttons">
         <button class="area-btn pedagogia" data-area="Pedagogia generale e storia della pedagogia">🎓<span>Pedagogia</span></button>
         <button class="area-btn psicologia" data-area="Psicologia dello sviluppo e dell’apprendimento">🧠<span>Psicologia</span></button>
@@ -41,6 +40,16 @@
         <button class="area-btn normativa disabled" data-area="Ordinamenti scolastici, educazione civica e normativa">⚖️<span>Normativa</span></button>
         <button class="area-btn inclusione disabled" data-area="Inclusione e bisogni educativi speciali">♿<span>Inclusione</span></button>
         <button class="area-btn digitali disabled" data-area="Competenze digitali e PNRR">💻<span>Digitali</span></button>
+      </div>
+
+      <!-- 🔹 Selettore direzione -->
+      <div class="direction-selector">
+        <label>Direzione delle carte:</label>
+        <div class="direction-buttons">
+          <button class="dir-btn selected" data-dir="random">🔀 Casuale</button>
+          <button class="dir-btn" data-dir="a2b">A → B</button>
+          <button class="dir-btn" data-dir="b2a">B → A</button>
+        </div>
       </div>
     </div>
   </main>
