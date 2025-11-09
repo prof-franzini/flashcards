@@ -1,13 +1,14 @@
-// Flashcards – Concorso Scuola (versione corretta: coppie coerenti + rimozione macroarea)
+// Flashcards – Concorso Scuola (versione stabile: flashcard reale, coppie coerenti, senza macroarea)
 
 let cards = [];
 let currentIndex = 0;
 let reviewMode = false;
 let filteredCards = [];
-let currentDirection = "a2b"; // a→b o b→a
+let showingAnswer = false;
 let cardsReady = false;
+let currentDirection = "a2b"; // direzione della carta corrente
 
-// 🔹 Inizializzazione dopo il caricamento DOM
+// 🔹 Inizializzazione
 window.addEventListener("DOMContentLoaded", () => {
   loadCards();
   wireUI();
@@ -26,38 +27,43 @@ async function loadCards() {
 }
 
 function wireUI() {
-  // Selezione area con pulsanti
+  // Selezione area
   document.querySelectorAll(".area-btn, .btn-all").forEach(btn => {
     btn.addEventListener("click", async () => {
       if (btn.classList.contains("disabled")) {
         alert("Area in costruzione");
         return;
       }
-      // Attendi che le carte siano pronte
       if (!cardsReady) await waitForCards();
       const area = btn.dataset.area;
       startGame(area);
     });
   });
 
-  // Flip carta: prima tocco → mostra risposta; secondo tocco → prossima carta
+  // Click sulla carta
   const cardEl = document.getElementById("card");
   cardEl.addEventListener("click", () => {
-    const front = document.getElementById("card-front");
-    const back = document.getElementById("card-back");
-    const frontHidden = front.classList.contains("hidden");
-    if (frontHidden) {
-      nextCard();
+    if (!showingAnswer) {
+      // mostra risposta della stessa carta
+      document.getElementById("card-front").classList.add("hidden");
+      document.getElementById("card-back").classList.remove("hidden");
+      showingAnswer = true;
     } else {
-      front.classList.add("hidden");
-      back.classList.remove("hidden");
+      // passa alla prossima carta
+      nextCard();
     }
   });
 
-  // Shortcut tastiera
+  // Tasti
   document.body.addEventListener("keydown", e => {
     if (e.code === "Space" || e.code === "ArrowRight") {
-      nextCard();
+      if (!showingAnswer) {
+        document.getElementById("card-front").classList.add("hidden");
+        document.getElementById("card-back").classList.remove("hidden");
+        showingAnswer = true;
+      } else {
+        nextCard();
+      }
     }
   });
 
@@ -82,8 +88,7 @@ function wireUI() {
 function waitForCards() {
   return new Promise(resolve => {
     const chk = () => {
-      if (cardsReady) resolve();
-      else setTimeout(chk, 50);
+      if (cardsReady) resolve(); else setTimeout(chk, 50);
     };
     chk();
   });
@@ -95,7 +100,6 @@ function startGame(area) {
   selectArea.classList.add("hidden");
   gameArea.classList.remove("hidden");
 
-  // Filtra e mescola casualmente (Fisher–Yates)
   filteredCards = area === "tutte" ? [...cards] : cards.filter(c => c.area === area);
   shuffleArray(filteredCards);
 
@@ -110,8 +114,9 @@ function showCard() {
   const frontEl = document.getElementById("card-question");
   const backEl = document.getElementById("card-answer");
 
-  // Direzione casuale (ma sempre interna alla coppia)
+  // Direzione casuale UNA volta per carta
   currentDirection = Math.random() < 0.5 ? "a2b" : "b2a";
+
   if (currentDirection === "a2b") {
     frontEl.textContent = card.a;
     backEl.textContent = card.b;
@@ -120,20 +125,20 @@ function showCard() {
     backEl.textContent = card.a;
   }
 
-  // ❌ RIMOSSO: meta area
+  // Rimuoviamo l'area (macroarea)
   // const metaEl = document.getElementById("card-meta");
-  // metaEl.textContent = card.area;
+  // metaEl.textContent = "";
 
   document.getElementById("count-remaining").textContent =
     "Rimaste: " + (filteredCards.length - currentIndex - 1);
 
-  // Sempre lato domanda all’inizio
+  // Mostra sempre domanda per prima
   document.getElementById("card-front").classList.remove("hidden");
   document.getElementById("card-back").classList.add("hidden");
+  showingAnswer = false;
 }
 
 function nextCard() {
-  if (filteredCards.length === 0) return;
   currentIndex++;
   if (currentIndex >= filteredCards.length) {
     currentIndex = 0;
