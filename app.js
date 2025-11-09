@@ -2,8 +2,17 @@ let cards = [];
 let currentIndex = 0;
 let filteredCards = [];
 let cardsReady = false;
+
+// Direzione
 let directionMode = "random"; // "a2b" | "b2a" | "random"
 let currentDirection = "a2b";
+
+// Revisione: usa le carte già passate
+let reviewMode = false;
+let seenCards = []; // ordine di visione durante la sessione corrente (oggetti carta, senza duplicati)
+
+// Per tornare dallo stato di revisione al mazzo originale
+let backupState = null; // { filtered, index }
 
 window.addEventListener("DOMContentLoaded", () => {
   loadCards();
@@ -23,7 +32,7 @@ async function loadCards() {
 }
 
 function wireUI() {
-  // 🔹 Selettore direzione (nuovo)
+  // Selettore direzione
   document.querySelectorAll(".dir-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".dir-btn").forEach(b => b.classList.remove("selected"));
@@ -32,7 +41,7 @@ function wireUI() {
     });
   });
 
-  // 🔹 Selezione area
+  // Selezione area
   document.querySelectorAll(".area-btn, .btn-all").forEach(btn => {
     btn.addEventListener("click", async () => {
       if (btn.classList.contains("disabled")) {
@@ -45,20 +54,21 @@ function wireUI() {
     });
   });
 
-  // 🔹 Click su carta (mostra risposta o passa alla prossima)
+  // Click su carta (tap mobile friendly)
   const cardEl = document.getElementById("card");
   let lastClickTime = 0;
 
   cardEl.addEventListener("click", () => {
     const now = Date.now();
-    if (now - lastClickTime < 300) return; // evita doppio tap veloce
+    if (now - lastClickTime < 300) return; // anti doppio tap
     lastClickTime = now;
 
     const front = document.getElementById("card-front");
     const back = document.getElementById("card-back");
 
     if (front.classList.contains("hidden")) {
-      // se sto vedendo la risposta → vai alla prossima carta
+      // ero sulla risposta → considero la carta "vista" e passo alla prossima
+      markCurrentAsSeen();
       nextCard();
     } else {
       // mostra la risposta
@@ -67,19 +77,56 @@ function wireUI() {
     }
   });
 
-  // 🔹 Tasto spazio o freccia destra = prossima carta
+  // Scorciatoie tastiera
   document.body.addEventListener("keydown", e => {
-    if (e.code === "Space" || e.code === "ArrowRight") nextCard();
+    if (e.code === "Space" || e.code === "ArrowRight") {
+      // se sto vedendo la risposta, contala come vista
+      const front = document.getElementById("card-front");
+      if (front.classList.contains("hidden")) markCurrentAsSeen();
+      nextCard();
+    }
   });
 
-  // 🔹 Pulsante Reset
+  // Revisione
+  const btnReview = document.getElementById("btn-toggle-review");
+  btnReview.addEventListener("click", () => {
+    if (!reviewMode) {
+      // Entrata in revisione: usa solo le carte già passate
+      if (seenCards.length === 0) {
+        alert("Non hai ancora visto nessuna carta da rivedere.");
+        return;
+      }
+      // salva stato
+      backupState = {
+        filtered: filteredCards.slice(),
+        index: currentIndex
+      };
+      filteredCards = seenCards.slice(); // ordine di visione, nessuno shuffle
+      currentIndex = 0;
+      reviewMode = true;
+      btnReview.textContent = "Esci Revisione";
+      showCard();
+    } else {
+      // Uscita dalla revisione: ripristina stato
+      if (backupState) {
+        filteredCards = backupState.filtered;
+        currentIndex = backupState.index;
+      }
+      reviewMode = false;
+      btnReview.textContent = "Avvia Revisione";
+      showCard();
+    }
+  });
+
+  // Reset
   document.getElementById("btn-reset").addEventListener("click", () => {
     currentIndex = 0;
+    seenCards = [];
     shuffleArray(filteredCards);
     showCard();
   });
 
-  // 🔹 Pulsante Home
+  // Home
   document.getElementById("btn-home").addEventListener("click", () => {
     document.getElementById("game-area").classList.add("hidden");
     document.getElementById("area-select").classList.remove("hidden");
@@ -106,8 +153,14 @@ function startGame(area) {
     return;
   }
 
+  // reset stato sessione
   shuffleArray(filteredCards);
   currentIndex = 0;
+  seenCards = [];
+  reviewMode = false;
+  const btnReview = document.getElementById("btn-toggle-review");
+  if (btnReview) btnReview.textContent = "Avvia Revisione";
+
   showCard();
 }
 
@@ -118,14 +171,11 @@ function showCard() {
   const frontEl = document.getElementById("card-question");
   const backEl = document.getElementById("card-answer");
 
-  // 🔹 Scegli direzione per questa carta
-  if (directionMode === "random") {
-    currentDirection = Math.random() < 0.5 ? "a2b" : "b2a";
-  } else {
-    currentDirection = directionMode;
-  }
+  // Direzione per questa carta
+  currentDirection = (directionMode === "random")
+    ? (Math.random() < 0.5 ? "a2b" : "b2a")
+    : directionMode;
 
-  // 🔹 Mostra i lati coerenti
   if (currentDirection === "a2b") {
     frontEl.textContent = card.a;
     backEl.textContent = card.b;
@@ -134,13 +184,14 @@ function showCard() {
     backEl.textContent = card.a;
   }
 
+  // UI
   document.getElementById("card-direction").textContent =
     currentDirection === "a2b" ? "Domanda → Risposta" : "Risposta → Domanda";
 
   document.getElementById("count-remaining").textContent =
     `Carta ${currentIndex + 1} / ${filteredCards.length}`;
 
-  // sempre riparti dal lato domanda
+  // riparti sempre dal fronte
   document.getElementById("card-front").classList.remove("hidden");
   document.getElementById("card-back").classList.add("hidden");
 }
@@ -151,13 +202,26 @@ function nextCard() {
   currentIndex++;
   if (currentIndex >= filteredCards.length) {
     currentIndex = 0;
-    shuffleArray(filteredCards);
+    // In revisione NON mescoliamo; in modalità normale sì
+    if (!reviewMode) shuffleArray(filteredCards);
   }
-
   showCard();
 }
 
-// 🔹 Fisher–Yates shuffle
+// Segna l'attuale carta come "già passata" (una sola volta)
+function markCurrentAsSeen() {
+  const card = filteredCards[currentIndex];
+  if (!card) return;
+
+  // Evita duplicati: usa il riferimento all'oggetto o una chiave (a+b+area)
+  const keyOf = c => `${c.a}|||${c.b}|||${c.area ?? ""}`;
+  const hasAlready = seenCards.some(c => keyOf(c) === keyOf(card));
+  if (!hasAlready) {
+    seenCards.push(card);
+  }
+}
+
+// Fisher–Yates
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
