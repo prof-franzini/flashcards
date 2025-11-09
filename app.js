@@ -3,7 +3,7 @@ let currentIndex = 0;
 let reviewMode = false;
 let filteredCards = [];
 let currentDirection = "a2b";
-let directionMode = "random"; // 🔹 "a2b" | "b2a" | "random"
+let directionMode = "random"; // "a2b" | "b2a" | "random"
 let cardsReady = false;
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -15,7 +15,8 @@ async function loadCards() {
   try {
     const res = await fetch("cards.json");
     const data = await res.json();
-    cards = data;
+    // 🔹 Aggiunge proprietà "review" a ogni carta
+    cards = data.map(c => ({ ...c, review: false }));
     cardsReady = true;
   } catch (e) {
     console.error("Errore nel caricamento delle carte:", e);
@@ -46,7 +47,7 @@ function wireUI() {
     });
   });
 
-  // 🔹 Flip carta
+  // 🔹 Flip carta (gestione click)
   const cardEl = document.getElementById("card");
   let lastClickTime = 0;
 
@@ -59,8 +60,12 @@ function wireUI() {
     const back = document.getElementById("card-back");
 
     if (front.classList.contains("hidden")) {
+      // 🔸 se sto vedendo la risposta → segna la carta per revisione e passa alla prossima
+      const card = filteredCards[currentIndex];
+      card.review = true;
       nextCard();
     } else {
+      // 🔸 mostra risposta
       front.classList.add("hidden");
       back.classList.remove("hidden");
     }
@@ -72,9 +77,32 @@ function wireUI() {
   });
 
   // 🔹 Revisione e reset
-  document.getElementById("btn-toggle-review").addEventListener("click", () => {
+  const btnReview = document.getElementById("btn-toggle-review");
+  btnReview.addEventListener("click", () => {
     reviewMode = !reviewMode;
-    document.getElementById("btn-toggle-review").textContent = reviewMode ? "Esci Revisione" : "Avvia Revisione";
+
+    if (reviewMode) {
+      // 🔸 Mostra solo carte segnate
+      const reviewCards = cards.filter(c => c.review);
+      if (reviewCards.length === 0) {
+        alert("Nessuna carta segnata per la revisione!");
+        reviewMode = false;
+        btnReview.textContent = "Avvia Revisione";
+        return;
+      }
+      filteredCards = reviewCards;
+      btnReview.textContent = "Esci Revisione";
+      document.title = "🔁 Revisione – Flashcards";
+    } else {
+      // 🔸 Torna al mazzo completo
+      filteredCards = [...cards];
+      shuffleArray(filteredCards);
+      btnReview.textContent = "Avvia Revisione";
+      document.title = "Flashcards – Concorso Scuola";
+    }
+
+    currentIndex = 0;
+    showCard();
   });
 
   document.getElementById("btn-reset").addEventListener("click", () => {
@@ -152,7 +180,7 @@ function nextCard() {
   currentIndex++;
   if (currentIndex >= filteredCards.length) {
     currentIndex = 0;
-    shuffleArray(filteredCards);
+    if (!reviewMode) shuffleArray(filteredCards);
   }
   showCard();
 }
