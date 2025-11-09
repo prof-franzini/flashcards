@@ -43,20 +43,28 @@ function wireUI() {
   });
 
   // Flip carta (prima tocco: mostra risposta; secondo tocco: passa alla prossima)
-  const cardEl = document.getElementById("card");
-  cardEl.addEventListener("click", () => {
-    const front = document.getElementById("card-front");
-    const back = document.getElementById("card-back");
-    const frontHidden = front.classList.contains("hidden");
-    if (frontHidden) {
-      // se stavo vedendo la risposta, vai alla prossima carta
-      nextCard();
-    } else {
-      // altrimenti mostra la risposta
-      front.classList.add("hidden");
-      back.classList.remove("hidden");
-    }
-  });
+const cardEl = document.getElementById("card");
+let lastClickTime = 0; // 🧩 anti-doppio-click
+
+cardEl.addEventListener("click", () => {
+  const now = Date.now();
+  if (now - lastClickTime < 300) return; // ignora doppio click veloce
+  lastClickTime = now;
+
+  const front = document.getElementById("card-front");
+  const back = document.getElementById("card-back");
+  const frontHidden = front.classList.contains("hidden");
+
+  if (frontHidden) {
+    // se stavo vedendo la risposta, vai alla prossima carta
+    nextCard();
+  } else {
+    // altrimenti mostra la risposta
+    front.classList.add("hidden");
+    back.classList.remove("hidden");
+  }
+});
+
 
   // Shortcut tastiera
   document.body.addEventListener("keydown", e => {
