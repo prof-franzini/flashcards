@@ -36,7 +36,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* 🔹 Sezione selezione aree */
@@ -153,31 +153,32 @@ body {
   align-items: center;
   flex-grow: 1;
   padding: 1rem;
-  perspective: 1000px;
 }
 
 .card {
   width: 320px;
-  min-height: 200px;
+  min-height: 220px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   cursor: pointer;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
+/* 🔹 Lati della carta (nessuna sovrapposizione) */
 .face {
   padding: 1.5rem;
-  backface-visibility: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
   box-sizing: border-box;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: white;
 }
 
 .face.back {
@@ -203,7 +204,7 @@ body {
   text-align: right;
 }
 
-/* 🔹 Pulsanti gioco */
+/* 🔹 Pulsanti di gioco */
 .buttons {
   display: flex;
   gap: 0.5rem;
@@ -261,5 +262,9 @@ button.secondary:hover {
 
   .topbar h1 {
     font-size: 0.9rem;
+  }
+
+  .text {
+    font-size: 0.95rem;
   }
 }
