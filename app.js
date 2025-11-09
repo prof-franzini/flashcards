@@ -128,7 +128,7 @@ function showCard() {
     backEl.textContent = card.a;
   }
 
-  metaEl.textContent = card.area;
+  // metaEl.textContent = card.area;
   document.getElementById("count-remaining").textContent = "Rimaste: " + (filteredCards.length - currentIndex - 1);
 
   // riparti sempre dal lato domanda
