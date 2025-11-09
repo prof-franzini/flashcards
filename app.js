@@ -1,13 +1,13 @@
-// Flashcards – Concorso Scuola (fix: random picking + random direction, robust loading)
+// Flashcards – Concorso Scuola (versione corretta: coppie coerenti + rimozione macroarea)
 
 let cards = [];
 let currentIndex = 0;
 let reviewMode = false;
 let filteredCards = [];
-let currentDirection = "a2b"; // a→b or b→a
+let currentDirection = "a2b"; // a→b o b→a
 let cardsReady = false;
 
-// 🔹 Init after DOM is ready
+// 🔹 Inizializzazione dopo il caricamento DOM
 window.addEventListener("DOMContentLoaded", () => {
   loadCards();
   wireUI();
@@ -26,7 +26,7 @@ async function loadCards() {
 }
 
 function wireUI() {
-  // Selezione area con nuovi pulsanti
+  // Selezione area con pulsanti
   document.querySelectorAll(".area-btn, .btn-all").forEach(btn => {
     btn.addEventListener("click", async () => {
       if (btn.classList.contains("disabled")) {
@@ -34,25 +34,21 @@ function wireUI() {
         return;
       }
       // Attendi che le carte siano pronte
-      if (!cardsReady) {
-        await waitForCards();
-      }
+      if (!cardsReady) await waitForCards();
       const area = btn.dataset.area;
       startGame(area);
     });
   });
 
-  // Flip carta (prima tocco: mostra risposta; secondo tocco: passa alla prossima)
+  // Flip carta: prima tocco → mostra risposta; secondo tocco → prossima carta
   const cardEl = document.getElementById("card");
   cardEl.addEventListener("click", () => {
     const front = document.getElementById("card-front");
     const back = document.getElementById("card-back");
     const frontHidden = front.classList.contains("hidden");
     if (frontHidden) {
-      // se stavo vedendo la risposta, vai alla prossima carta
       nextCard();
     } else {
-      // altrimenti mostra la risposta
       front.classList.add("hidden");
       back.classList.remove("hidden");
     }
@@ -86,7 +82,8 @@ function wireUI() {
 function waitForCards() {
   return new Promise(resolve => {
     const chk = () => {
-      if (cardsReady) resolve(); else setTimeout(chk, 50);
+      if (cardsReady) resolve();
+      else setTimeout(chk, 50);
     };
     chk();
   });
@@ -99,11 +96,7 @@ function startGame(area) {
   gameArea.classList.remove("hidden");
 
   // Filtra e mescola casualmente (Fisher–Yates)
-  if (area === "tutte") {
-    filteredCards = [...cards];
-  } else {
-    filteredCards = cards.filter(c => c.area === area);
-  }
+  filteredCards = area === "tutte" ? [...cards] : cards.filter(c => c.area === area);
   shuffleArray(filteredCards);
 
   currentIndex = 0;
@@ -116,9 +109,8 @@ function showCard() {
   const card = filteredCards[currentIndex];
   const frontEl = document.getElementById("card-question");
   const backEl = document.getElementById("card-answer");
-  const metaEl = document.getElementById("card-meta");
 
-  // Direzione casuale ad ogni carta
+  // Direzione casuale (ma sempre interna alla coppia)
   currentDirection = Math.random() < 0.5 ? "a2b" : "b2a";
   if (currentDirection === "a2b") {
     frontEl.textContent = card.a;
@@ -128,10 +120,14 @@ function showCard() {
     backEl.textContent = card.a;
   }
 
-  metaEl.textContent = card.area;
-  document.getElementById("count-remaining").textContent = "Rimaste: " + (filteredCards.length - currentIndex - 1);
+  // ❌ RIMOSSO: meta area
+  // const metaEl = document.getElementById("card-meta");
+  // metaEl.textContent = card.area;
 
-  // riparti sempre dal lato domanda
+  document.getElementById("count-remaining").textContent =
+    "Rimaste: " + (filteredCards.length - currentIndex - 1);
+
+  // Sempre lato domanda all’inizio
   document.getElementById("card-front").classList.remove("hidden");
   document.getElementById("card-back").classList.add("hidden");
 }
