@@ -1,12 +1,12 @@
-// Flashcards – Concorso Scuola (versione stabile definitiva: coppie A→B fisse, no random direction, no macroarea)
+// Flashcards – versione semplificata e corretta (coppie A→B coerenti, nessuna confusione)
 
 let cards = [];
-let currentIndex = 0;
 let filteredCards = [];
+let currentIndex = 0;
 let showingAnswer = false;
 let cardsReady = false;
 
-// 🔹 Inizializzazione
+// 🔹 Inizializza quando la pagina è pronta
 window.addEventListener("DOMContentLoaded", () => {
   loadCards();
   wireUI();
@@ -18,14 +18,13 @@ async function loadCards() {
     const data = await res.json();
     cards = data;
     cardsReady = true;
-  } catch (e) {
-    console.error("Errore nel caricamento delle carte:", e);
+  } catch (err) {
+    console.error("Errore nel caricamento delle carte:", err);
     alert("Impossibile caricare le carte.");
   }
 }
 
 function wireUI() {
-  // Selezione area
   document.querySelectorAll(".area-btn, .btn-all").forEach(btn => {
     btn.addEventListener("click", async () => {
       if (btn.classList.contains("disabled")) {
@@ -38,38 +37,15 @@ function wireUI() {
     });
   });
 
-  // Click sulla carta
   const cardEl = document.getElementById("card");
-  cardEl.addEventListener("click", () => {
-    if (!showingAnswer) {
-      // Mostra risposta
-      document.getElementById("card-front").classList.add("hidden");
-      document.getElementById("card-back").classList.remove("hidden");
-      showingAnswer = true;
-    } else {
-      // Passa alla prossima carta
-      nextCard();
-    }
-  });
+  cardEl.addEventListener("click", handleCardClick);
 
-  // Tasti scorciatoia
   document.body.addEventListener("keydown", e => {
-    if (e.code === "Space" || e.code === "ArrowRight") {
-      if (!showingAnswer) {
-        document.getElementById("card-front").classList.add("hidden");
-        document.getElementById("card-back").classList.remove("hidden");
-        showingAnswer = true;
-      } else {
-        nextCard();
-      }
-    }
+    if (e.code === "Space" || e.code === "ArrowRight") handleCardClick();
   });
 
-  // Pulsanti
   document.getElementById("btn-reset").addEventListener("click", () => {
-    currentIndex = 0;
-    shuffleArray(filteredCards);
-    showCard();
+    startGame("tutte");
   });
 
   document.getElementById("btn-home").addEventListener("click", () => {
@@ -80,10 +56,11 @@ function wireUI() {
 
 function waitForCards() {
   return new Promise(resolve => {
-    const chk = () => {
-      if (cardsReady) resolve(); else setTimeout(chk, 50);
+    const check = () => {
+      if (cardsReady) resolve();
+      else setTimeout(check, 50);
     };
-    chk();
+    check();
   });
 }
 
@@ -97,27 +74,40 @@ function startGame(area) {
   shuffleArray(filteredCards);
 
   currentIndex = 0;
+  showingAnswer = false;
   showCard();
 }
 
+function handleCardClick() {
+  if (!filteredCards.length) return;
+
+  if (!showingAnswer) {
+    // Mostra risposta della stessa carta
+    document.getElementById("card-front").classList.add("hidden");
+    document.getElementById("card-back").classList.remove("hidden");
+    showingAnswer = true;
+  } else {
+    // Passa alla carta successiva
+    nextCard();
+  }
+}
+
 function showCard() {
-  if (filteredCards.length === 0) return;
-
   const card = filteredCards[currentIndex];
-  const frontEl = document.getElementById("card-question");
-  const backEl = document.getElementById("card-answer");
+  const front = document.getElementById("card-question");
+  const back = document.getElementById("card-answer");
 
-  // Mostra sempre A → B
-  frontEl.textContent = card.a;
-  backEl.textContent = card.b;
+  // Mostra sempre a → b (coerente)
+  front.textContent = card.a;
+  back.textContent = card.b;
 
   document.getElementById("count-remaining").textContent =
     "Rimaste: " + (filteredCards.length - currentIndex - 1);
 
-  // Macroarea rimossa
+  // Nascondi macroarea
   // document.getElementById("card-meta").textContent = "";
 
-  // Mostra lato domanda
+  // Lato domanda
   document.getElementById("card-front").classList.remove("hidden");
   document.getElementById("card-back").classList.add("hidden");
   showingAnswer = false;
@@ -132,7 +122,7 @@ function nextCard() {
   showCard();
 }
 
-// 🔹 Fisher–Yates shuffle
+// 🔹 Fisher–Yates shuffle (mescola tutto ma mantiene le coppie integre)
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
