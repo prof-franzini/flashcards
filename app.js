@@ -1,10 +1,9 @@
 let cards = [];
 let currentIndex = 0;
-let reviewMode = false;
 let filteredCards = [];
-let currentDirection = "a2b";
-let directionMode = "random"; // "a2b" | "b2a" | "random"
 let cardsReady = false;
+let directionMode = "random"; // "a2b" | "b2a" | "random"
+let currentDirection = "a2b";
 
 window.addEventListener("DOMContentLoaded", () => {
   loadCards();
@@ -15,8 +14,7 @@ async function loadCards() {
   try {
     const res = await fetch("cards.json");
     const data = await res.json();
-    // 🔹 Aggiunge proprietà "review" a ogni carta
-    cards = data.map(c => ({ ...c, review: false }));
+    cards = data;
     cardsReady = true;
   } catch (e) {
     console.error("Errore nel caricamento delle carte:", e);
@@ -25,7 +23,7 @@ async function loadCards() {
 }
 
 function wireUI() {
-  // 🔹 Selettore direzione
+  // 🔹 Selettore direzione (nuovo)
   document.querySelectorAll(".dir-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       document.querySelectorAll(".dir-btn").forEach(b => b.classList.remove("selected"));
@@ -47,70 +45,41 @@ function wireUI() {
     });
   });
 
-  // 🔹 Flip carta (gestione click)
+  // 🔹 Click su carta (mostra risposta o passa alla prossima)
   const cardEl = document.getElementById("card");
   let lastClickTime = 0;
 
   cardEl.addEventListener("click", () => {
     const now = Date.now();
-    if (now - lastClickTime < 300) return;
+    if (now - lastClickTime < 300) return; // evita doppio tap veloce
     lastClickTime = now;
 
     const front = document.getElementById("card-front");
     const back = document.getElementById("card-back");
 
     if (front.classList.contains("hidden")) {
-      // 🔸 se sto vedendo la risposta → segna la carta per revisione e passa alla prossima
-      const card = filteredCards[currentIndex];
-      card.review = true;
+      // se sto vedendo la risposta → vai alla prossima carta
       nextCard();
     } else {
-      // 🔸 mostra risposta
+      // mostra la risposta
       front.classList.add("hidden");
       back.classList.remove("hidden");
     }
   });
 
-  // 🔹 Shortcut tastiera
+  // 🔹 Tasto spazio o freccia destra = prossima carta
   document.body.addEventListener("keydown", e => {
     if (e.code === "Space" || e.code === "ArrowRight") nextCard();
   });
 
-  // 🔹 Revisione e reset
-  const btnReview = document.getElementById("btn-toggle-review");
-  btnReview.addEventListener("click", () => {
-    reviewMode = !reviewMode;
-
-    if (reviewMode) {
-      // 🔸 Mostra solo carte segnate
-      const reviewCards = cards.filter(c => c.review);
-      if (reviewCards.length === 0) {
-        alert("Nessuna carta segnata per la revisione!");
-        reviewMode = false;
-        btnReview.textContent = "Avvia Revisione";
-        return;
-      }
-      filteredCards = reviewCards;
-      btnReview.textContent = "Esci Revisione";
-      document.title = "🔁 Revisione – Flashcards";
-    } else {
-      // 🔸 Torna al mazzo completo
-      filteredCards = [...cards];
-      shuffleArray(filteredCards);
-      btnReview.textContent = "Avvia Revisione";
-      document.title = "Flashcards – Concorso Scuola";
-    }
-
-    currentIndex = 0;
-    showCard();
-  });
-
+  // 🔹 Pulsante Reset
   document.getElementById("btn-reset").addEventListener("click", () => {
     currentIndex = 0;
     shuffleArray(filteredCards);
     showCard();
   });
 
+  // 🔹 Pulsante Home
   document.getElementById("btn-home").addEventListener("click", () => {
     document.getElementById("game-area").classList.add("hidden");
     document.getElementById("area-select").classList.remove("hidden");
@@ -119,7 +88,7 @@ function wireUI() {
 
 function waitForCards() {
   return new Promise(resolve => {
-    const chk = () => cardsReady ? resolve() : setTimeout(chk, 50);
+    const chk = () => (cardsReady ? resolve() : setTimeout(chk, 50));
     chk();
   });
 }
@@ -149,13 +118,14 @@ function showCard() {
   const frontEl = document.getElementById("card-question");
   const backEl = document.getElementById("card-answer");
 
-  // 🔹 Direzione in base alla modalità scelta
+  // 🔹 Scegli direzione per questa carta
   if (directionMode === "random") {
     currentDirection = Math.random() < 0.5 ? "a2b" : "b2a";
   } else {
     currentDirection = directionMode;
   }
 
+  // 🔹 Mostra i lati coerenti
   if (currentDirection === "a2b") {
     frontEl.textContent = card.a;
     backEl.textContent = card.b;
@@ -170,6 +140,7 @@ function showCard() {
   document.getElementById("count-remaining").textContent =
     `Carta ${currentIndex + 1} / ${filteredCards.length}`;
 
+  // sempre riparti dal lato domanda
   document.getElementById("card-front").classList.remove("hidden");
   document.getElementById("card-back").classList.add("hidden");
 }
@@ -180,8 +151,9 @@ function nextCard() {
   currentIndex++;
   if (currentIndex >= filteredCards.length) {
     currentIndex = 0;
-    if (!reviewMode) shuffleArray(filteredCards);
+    shuffleArray(filteredCards);
   }
+
   showCard();
 }
 
