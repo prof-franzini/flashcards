@@ -738,5 +738,150 @@
     "a": "Paul Watzlawick",
     "b": "Analizza la comunicazione interpersonale e gli assiomi della pragmatica: 'non si può non comunicare'.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Raymond Cattell",
+    "b": "Psicologo britannico, distingue tra intelligenza fluida (capacità di risolvere nuovi problemi) e cristallizzata (conoscenze acquisite).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "David Kolb",
+    "b": "Elabora il ciclo dell’apprendimento esperienziale: esperienza concreta, riflessione, concettualizzazione e sperimentazione attiva.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Anton Makarenko",
+    "b": "Pedagogo sovietico, sostiene l’educazione collettiva come strumento di formazione morale e sociale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Johann Friedrich Herbart Hessen",
+    "b": "Filosofo e pedagogo, elabora una teoria dell’educazione integrale che unisce valori morali e formazione culturale.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "James Marcia",
+    "b": "Amplia la teoria di Erikson sull’identità, individuando quattro stati di sviluppo identitario: diffusione, moratoria, blocco e raggiungimento.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Bruno Bettelheim",
+    "b": "Psicoanalista che interpreta le fiabe come strumenti per elaborare conflitti inconsci e favorire la crescita psicologica.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Karl Duncker",
+    "b": "Studioso della Gestalt, introduce il concetto di fissità funzionale nello studio del problem solving.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Martin Hoffman",
+    "b": "Teorico dello sviluppo morale, sottolinea il ruolo dell’empatia nei processi di interiorizzazione delle norme.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Gregory Bateson",
+    "b": "Antropologo e teorico dei sistemi, elabora il concetto di doppio legame e promuove una visione ecologica della mente.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Pietro Pietropolli Charmet",
+    "b": "Psicoanalista italiano che studia l’adolescenza come fase di ridefinizione identitaria e relazionale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Jerome Kagan",
+    "b": "Psicologo dello sviluppo, studia il temperamento e le differenze individuali nell’inibizione comportamentale.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Effetto Pigmalione",
+    "b": "Fenomeno per cui le aspettative dell’insegnante influenzano le prestazioni dello studente, creando profezie autoavveranti.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Kurt Goldstein",
+    "b": "Neurologo e psicologo della Gestalt, sottolinea l’organizzazione olistica dell’individuo e l’adattamento creativo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Georg Kerschensteiner",
+    "b": "Pedagogo tedesco, fonda la scuola del lavoro, integrando istruzione manuale e formazione civica.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Area di Broca",
+    "b": "Regione cerebrale del lobo frontale sinistro associata alla produzione del linguaggio.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Willem Doise",
+    "b": "Psicologo sociale, distingue quattro livelli di analisi del comportamento: intraindividuale, interindividuale, posizionale e ideologico.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Graham Wallas",
+    "b": "Propone le quattro fasi del processo creativo: preparazione, incubazione, illuminazione e verifica.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Magda Arnold",
+    "b": "Studiosa delle emozioni, sostiene che esse derivano da valutazioni cognitive della situazione (teoria dell’appraisal).",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Susanne Denham",
+    "b": "Psicologa dello sviluppo, studia la competenza emotiva nei bambini e la sua influenza sul successo scolastico.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Tony Buzan",
+    "b": "Inventore delle mappe mentali, strumento grafico per organizzare e memorizzare informazioni in modo creativo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Antonio Damasio",
+    "b": "Neuroscienziato che evidenzia il ruolo delle emozioni nei processi decisionali e nella costruzione dell’identità.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Silvano Arieti",
+    "b": "Psichiatra e psicoterapeuta che interpreta la creatività come integrazione di pensiero logico e immaginativo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Alan Sroufe",
+    "b": "Studioso dell’attaccamento, analizza la continuità tra relazioni infantili e competenze socio-emotive future.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Ernesto Codignola",
+    "b": "Pedagogo italiano del Novecento, promuove un’educazione democratica, laica e fondata sulla cooperazione.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Pedagogia istituzionale",
+    "b": "Corrente che vede l’educazione come costruzione collettiva, con attenzione alle dinamiche di gruppo e alla partecipazione.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Apprendimento cooperativo",
+    "b": "Metodo didattico basato sulla collaborazione tra pari, in cui ciascuno contribuisce all’obiettivo comune.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Pedagogia dell’inclusione",
+    "b": "Si fonda sull’accoglienza delle diversità e sull’adattamento educativo alle esigenze di ogni studente.",
+    "area": "Pedagogia generale e storia della pedagogia"
+  },
+  {
+    "a": "Neuroscienze educative",
+    "b": "Ambito interdisciplinare che collega le scoperte neuroscientifiche ai processi di insegnamento-apprendimento.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
+  },
+  {
+    "a": "Didattica metacognitiva",
+    "b": "Promuove la consapevolezza dei propri processi cognitivi per migliorare l’apprendimento autonomo.",
+    "area": "Psicologia dello sviluppo e dell’apprendimento"
   }
 ]
