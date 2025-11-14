@@ -883,5 +883,415 @@
     "a": "Didattica metacognitiva",
     "b": "Promuove la consapevolezza dei propri processi cognitivi per migliorare l’apprendimento autonomo.",
     "area": "Psicologia dello sviluppo e dell’apprendimento"
-  }
+  },
+  {
+    "a": "Didattica laboratoriale",
+    "b": "Metodo centrato su attività pratiche, sperimentazione e costruzione attiva della conoscenza.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Cooperative learning",
+    "b": "Approccio basato sul lavoro cooperativo con interdipendenza positiva, responsabilità individuale e valutazione di gruppo.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Interdipendenza positiva",
+    "b": "Condizione del cooperative learning in cui il successo del gruppo dipende dal contributo di ciascun membro.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Flipped classroom",
+    "b": "Modello che ribalta la lezione tradizionale: lo studio dei contenuti avviene a casa e le attività applicative in classe.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Problem based learning (PBL)",
+    "b": "Strategia che propone problemi autentici da risolvere per stimolare pensiero critico e competenze trasversali.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Inquiry based learning",
+    "b": "Apprendimento basato sull’indagine, formulazione di ipotesi, raccolta dati e costruzione di spiegazioni.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Project based learning",
+    "b": "Apprendimento tramite progetti significativi e prodotti finali concreti.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica per competenze",
+    "b": "Approccio centrato sull’agire competente, integrazione tra conoscenze, abilità e atteggiamenti.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Compiti di realtà",
+    "b": "Attività complesse e autentiche che richiedono l’applicazione di competenze in contesti reali o simulati.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Unità di apprendimento (UdA)",
+    "b": "Percorso strutturato che integra competenze, obiettivi, attività, risorse e valutazione.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Spiral curriculum",
+    "b": "Curricolo a spirale che riprende concetti chiave con complessità crescente.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Peer tutoring",
+    "b": "Apprendimento tra pari in cui uno studente aiuta un altro sotto la supervisione del docente.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Tutoring reciproco",
+    "b": "Forma di peer tutoring in cui i ruoli di tutor e tutee si alternano.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Gamification",
+    "b": "Uso di dinamiche ludiche (punti, badge, sfide) per aumentare coinvolgimento e motivazione.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Serious games",
+    "b": "Giochi pensati per apprendere contenuti scolastici o sviluppare competenze professionali.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Mappe concettuali (Novak)",
+    "b": "Strumenti grafici per organizzare concetti e relazioni in modo gerarchico.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Mappe mentali (Buzan)",
+    "b": "Rappresentazioni radiali che facilitano brainstorming, collegamenti e processi creativi.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica multimediale",
+    "b": "Uso integrato di testi, immagini, video, audio e simulazioni per favorire diversi stili cognitivi.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Approccio CLIL",
+    "b": "Content and Language Integrated Learning: insegnamento di contenuti disciplinari in lingua straniera.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Compito autentico",
+    "b": "Valutazione di prestazioni significative legate a situazioni reali o professionali.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica modulare",
+    "b": "Organizzazione del curricolo in moduli didattici autonomi e flessibili.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Apprendimento attivo",
+    "b": "Metodi che coinvolgono direttamente gli studenti in attività cognitive e pratiche.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Debate",
+    "b": "Tecnica che sviluppa argomentazione, pensiero critico e capacità comunicative.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Brainstorming",
+    "b": "Tecnica per generare idee in modo libero senza giudizio iniziale.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Think–Pair–Share",
+    "b": "Strategia cooperativa in tre fasi: riflessione individuale, confronto in coppia e condivisione con il gruppo.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Role playing",
+    "b": "Tecnica esperienziale in cui gli studenti interpretano ruoli per esplorare situazioni o problemi.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Studio di caso (case study)",
+    "b": "Analisi guidata di situazioni reali o verosimili per sviluppare competenze decisionali.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Apprendimento cooperativo strutturato (Kagan)",
+    "b": "Tecniche cooperative con ruoli e funzioni precise per ogni studente.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica differenziata",
+    "b": "Adattamento di contenuti, processi e prodotti alle caratteristiche degli studenti.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Universal Design for Learning (UDL)",
+    "b": "Approccio inclusivo che offre molteplici modalità di rappresentazione, espressione e coinvolgimento.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Tecniche di scaffolding",
+    "b": "Supporti temporanei che guidano progressivamente verso l’autonomia.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Routine cognitive",
+    "b": "Sequenze strutturate per allenare processi di pensiero e metacognizione.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Rubriche valutative",
+    "b": "Strumenti per valutare prestazioni complesse basati su criteri e livelli descrittivi.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Portfolio dello studente",
+    "b": "Raccolta strutturata di lavori che documentano processo e risultati di apprendimento.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Apprendimento ibrido (blended learning)",
+    "b": "Integrazione di momenti in presenza e attività online.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica digitale integrata (DDI)",
+    "b": "Modello che integra strumenti e risorse digitali nella didattica quotidiana.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Simulazioni digitali",
+    "b": "Ambienti interattivi che permettono esperimenti virtuali o esplorazioni guidate.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Competenze digitali del docente (DigCompEdu)",
+    "b": "Quadro europeo per la competenza digitale degli insegnanti.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Feedback formativo",
+    "b": "Restituzione tempestiva e orientata al miglioramento anziché alla sola valutazione sommativa.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Valutazione autentica",
+    "b": "Valutazione basata su compiti significativi e osservazione di prestazioni reali.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "E-learning",
+    "b": "Didattica supportata da piattaforme digitali e risorse online.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Apprendimento autoregolato",
+    "b": "Regolazione attiva dei processi di apprendimento attraverso obiettivi, monitoraggio e strategie.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica metacognitiva",
+    "b": "Approccio che sviluppa consapevolezza e controllo sui processi cognitivi.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Strategie di studio efficaci",
+    "b": "Sintesi, auto-spiegazione, spaced repetition, test effect.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica motivazionale",
+    "b": "Pratiche che favoriscono motivazione intrinseca, senso di competenza e autonomia.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Valutazione formativa",
+    "b": "Processo continuo che supporta l'apprendimento attraverso feedback, osservazione e regolazione delle attività.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Valutazione sommativa",
+    "b": "Rileva il livello finale delle competenze acquisite al termine di un percorso o di un modulo.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Valutazione diagnostica",
+    "b": "Analisi iniziale delle conoscenze e delle abilità pregresse per definire i bisogni educativi.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Didattica breve",
+    "b": "Metodo che mira all’essenzialità e alla chiarezza, selezionando nuclei fondanti e riducendo il carico cognitivo.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Apprendimento cooperativo – ruoli",
+    "b": "Nel cooperative learning ogni studente assume un ruolo specifico: facilitatore, relatore, controllore del tempo, sintetizzatore.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Tinkering educativo",
+    "b": "Approccio creativo che unisce sperimentazione, oggetti materiali e pensiero divergente per sviluppare problem solving.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Service Learning",
+    "b": "Metodologia che integra apprendimento e impegno civico attraverso azioni utili alla comunità.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Microlearning",
+    "b": "Apprendimento suddiviso in unità brevi e mirate, utile per consolidare conoscenze e facilitare la memorizzazione.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Learning Analytics",
+    "b": "Analisi dei dati digitali dell'apprendimento per personalizzare la didattica e migliorare gli esiti scolastici.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  {
+    "a": "Approccio STEAM",
+    "b": "Integrazione di Scienza, Tecnologia, Ingegneria, Arte e Matematica in percorsi progettuali e interdisciplinari.",
+    "area": "Metodologie e tecnologie didattiche"
+  },
+  { "a": "Costituzione Italiana – Art. 3", "b": "Stabilisce il principio di uguaglianza formale e sostanziale, base dell’inclusione scolastica.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Costituzione Italiana – Art. 34", "b": "La scuola è aperta a tutti; garantisce il diritto allo studio e la gratuità dell’istruzione inferiore.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Legge 517/1977", "b": "Introduce l’integrazione degli alunni con disabilità nella scuola comune e abolisce le classi speciali.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Legge 104/1992", "b": "Norma quadro per l’assistenza, l’integrazione e i diritti delle persone con disabilità.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Legge 53/2003", "b": "Delega al Governo per la riforma degli ordinamenti scolastici e la personalizzazione dei percorsi.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "DPR 275/1999 – Autonomia scolastica", "b": "Attribuisce alle scuole autonomia didattica, organizzativa, di ricerca e sperimentazione.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Indicazioni Nazionali 2012", "b": "Documento di riferimento per il curricolo nella scuola dell’infanzia e nel primo ciclo.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Indicazioni Nazionali per i Licei (2010)", "b": "Definiscono finalità, profilo e competenze dei percorsi liceali.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Linee guida per gli Istituti Tecnici (2010)", "b": "Strutturano competenze e quadri orari dei percorsi tecnici.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Linee guida per gli Istituti Professionali (2018)", "b": "Orientate alla didattica laboratoriale, personalizzazione e unità di apprendimento.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  
+  { "a": "Esame di Stato – D.Lgs. 62/2017", "b": "Disciplina valutazione, certificazione competenze e prove dell’esame conclusivo.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Valutazione nel primo ciclo – D.Lgs. 62/2017", "b": "Introduce voti descrittivi e criteri orientati all’apprendimento e non alla selezione.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Certificazione delle competenze", "b": "Documento che attesta il livello di competenza nelle otto competenze chiave europee.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Competenze chiave europee (2018)", "b": "Raccomandazione UE con 8 competenze fondamentali per il lifelong learning.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Educazione civica – Legge 92/2019", "b": "Introduce l’insegnamento trasversale dell’educazione civica con minimo 33 ore annuali.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  
+  { "a": "PTOF", "b": "Documento fondamentale dell’identità culturale e progettuale dell’istituto scolastico.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "RAV", "b": "Rapporto di Autovalutazione: strumento interno per monitorare punti di forza e criticità.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "PDM", "b": "Piano di Miglioramento: definisce azioni e obiettivi per il miglioramento dell’istituto.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "SNV – Sistema nazionale di valutazione", "b": "Comprende INVALSI, INDIRE e il contingente ispettivo del Ministero.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  
+  { "a": "INVALSI", "b": "Valuta competenze in Italiano, Matematica e Inglese e fornisce indicatori comparabili nazionali.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "PEI – D.Lgs. 66/2017", "b": "Documento personalizzato per l’inclusione degli alunni con disabilità, basato sul modello ICF.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "GLI", "b": "Gruppo di Lavoro per l’Inclusione: elabora proposte per il miglioramento inclusivo dell’istituto.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "GLO", "b": "Gruppo di lavoro operativo per il singolo alunno con disabilità, responsabile del PEI.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "PCTO", "b": "Percorsi per le Competenze Trasversali e l’Orientamento, ex alternanza scuola-lavoro.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+
+  { "a": "Tutela della privacy – GDPR", "b": "Regolamento europeo sulla protezione dei dati personali, applicabile anche a scuola.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Bullismo e cyberbullismo – Legge 71/2017", "b": "Introduce misure di prevenzione e contrasto del cyberbullismo con ruolo del referente scolastico.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Educazione alla legalità", "b": "Percorsi finalizzati alla consapevolezza civica, rispetto delle regole e prevenzione devianze.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  
+  { "a": "Organico dell’autonomia", "b": "Comprende docenti di potenziamento, di sostegno e dell'organico curricolare.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "DSGA", "b": "Direttore dei Servizi Generali e Amministrativi: responsabile della gestione amministrativa.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Consiglio di classe", "b": "Organo collegiale composto da tutti i docenti della classe; include rappresentanti di genitori e studenti.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Collegio docenti", "b": "Organo collegiale che delibera la programmazione didattica e il PTOF.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+
+  { "a": "Contratto collettivo scuola (CCNL)", "b": "Disciplina funzioni, obblighi, orario di servizio e responsabilità dei docenti.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Responsabilità del docente", "b": "Comprende responsabilità civile, penale, disciplinare e amministrativa.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+
+  { "a": "Compiti del dirigente scolastico", "b": "Assume la funzione di leadership educativa, valorizza il personale, garantisce funzionamento e sicurezza.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "Educazione ambientale – Agenda 2030", "b": "Integra obiettivi globali su sostenibilità, cittadinanza e responsabilità sociale.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+
+  { "a": "Educazione alla parità di genere", "b": "Promuove il rispetto, il contrasto agli stereotipi e le pari opportunità.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+
+  { "a": "Sicurezza a scuola – D.Lgs. 81/2008", "b": "Norma sulla sicurezza nei luoghi di lavoro applicata anche agli ambienti scolastici.", "area": "Ordinamenti scolastici, educazione civica e normativa" },
+  { "a": "ICF – OMS", "b": "Classificazione internazionale del funzionamento: modello bio-psico-sociale alla base del nuovo PEI.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Modello bio-psico-sociale", "b": "Considera la persona come interazione tra salute, attività, partecipazione e fattori ambientali.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Bisogni Educativi Speciali (BES)", "b": "Categoria che include disabilità, DSA e svantaggio socio-economico, linguistico o culturale.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "DSA – Legge 170/2010", "b": "Norma dedicata a dislessia, disgrafia, disortografia e discalculia; introduce PDP e misure compensative.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "PDP", "b": "Piano Didattico Personalizzato per studenti BES o DSA con strategie, misure e strumenti.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Misure compensative", "b": "Strumenti che compensano una difficoltà, come mappe concettuali o sintesi vocale.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Misure dispensative", "b": "Consentono di evitare attività non essenziali o eccessivamente penalizzanti.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "ADHD", "b": "Disturbo da deficit di attenzione e iperattività caratterizzato da impulsività e difficoltà di concentrazione.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Autismo – Disturbi dello spettro autistico", "b": "Caratterizzati da compromissione nella comunicazione e nella flessibilità comportamentale.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "PEI su base ICF", "b": "Documento centrato su funzionamento, barriere e facilitatori, non solo sulla diagnosi.", "area": "Inclusione e bisogni educativi speciali" },
+
+  { "a": "Profilo di funzionamento", "b": "Documento redatto dall’ASL che sostituisce la Diagnosi Funzionale.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Barriere e facilitatori", "b": "Fattori ambientali che ostacolano o favoriscono partecipazione e apprendimento.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Approccio inclusivo", "b": "Promuove la partecipazione di tutti, indipendentemente da abilità, origine o condizione.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Universal Design for Learning (UDL)", "b": "Approccio progettuale che prevede molteplici modi di rappresentare, esprimere e coinvolgere.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Cooperative Learning e inclusione", "b": "Favorisce eterogeneità, responsabilità individuale e supporto tra pari.", "area": "Inclusione e bisogni educativi speciali" },
+
+  { "a": "Didattica personalizzata", "b": "Adatta strategie, ritmi e strumenti ai bisogni del singolo studente.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Didattica individualizzata", "b": "Interventi mirati su abilità specifiche con attività calibrate.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Alunni stranieri di recente immigrazione", "b": "Possono rientrare nei BES per svantaggio linguistico e necessità di alfabetizzazione L2.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Italiano L2 a scuola", "b": "Percorsi per studenti non italofoni secondo i livelli QCER.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Alunno con alto potenziale cognitivo", "b": "Può richiedere arricchimento cognitivo, sfide aggiuntive e percorsi personalizzati.", "area": "Inclusione e bisogni educativi speciali" },
+  
+  { "a": "Transizione scuola-lavoro per alunni con disabilità", "b": "Il PEI deve includere obiettivi orientativi e competenze per l’autonomia.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Tutoraggio tra pari", "b": "Favorisce inclusione e acquisizione di competenze sociali.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Comportamenti problema", "b": "Vanno analizzati attraverso il modello ABC: antecedente, comportamento, conseguenza.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Educazione socio-emotiva (SEL)", "b": "Percorsi che sviluppano consapevolezza di sé, gestione delle emozioni e competenze relazionali.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Strategie visive", "b": "Agenda visiva, schemi e immagini supportano studenti con autismo e DSA.", "area": "Inclusione e bisogni educativi speciali" },
+
+  { "a": "Funzioni esecutive", "b": "Insieme di processi cognitivi come memoria di lavoro, inibizione e flessibilità mentale.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Alunno con disturbo del linguaggio (DSL)", "b": "Richiede supporti logopedici e strategie comunicative visive e contestualizzate.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Didattica per competenze e inclusione", "b": "Facilita la partecipazione attraverso compiti autentici e cooperative learning.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Valutazione degli alunni con DSA", "b": "Prevede strumenti compensativi e misure dispensative nelle prove.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Osservazione sistematica", "b": "Metodo fondamentale per individuare bisogni educativi e monitorare progressi.", "area": "Inclusione e bisogni educativi speciali" },
+
+  { "a": "Svantaggio socioeconomico", "b": "Può generare BES e richiede interventi di supporto e collaborazione con servizi sociali.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Benessere scolastico", "b": "Condizione fondamentale per apprendimento: implica clima positivo e relazioni rispettose.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Approccio ecologico", "b": "Analizza lo studente nel contesto di famiglia, scuola, comunità (Bronfenbrenner).", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Parent training", "b": "Percorso di supporto ai genitori di alunni con difficoltà comportamentali o emotive.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Interventi ABA", "b": "Metodo comportamentale basato su rinforzo positivo, utile nei disturbi dello spettro autistico.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Compiti autentici e inclusione", "b": "Permettono a ogni studente di dimostrare competenze in modi diversi.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Collaborazione scuola–famiglia", "b": "Fondamentale per progettare interventi condivisi e per il successo formativo.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Ruolo dell’insegnante di sostegno", "b": "Garantisce accessibilità, mediazione, supporto relazionale e personalizzazione.", "area": "Inclusione e bisogni educativi speciali" },
+  { "a": "Competenze digitali – DigComp 2.2", "b": "Quadro europeo per le competenze digitali di cittadini e studenti.", "area": "Competenze digitali e PNRR" },
+  { "a": "DigCompEdu", "b": "Quadro europeo per le competenze digitali dei docenti articolato in 6 aree.", "area": "Competenze digitali e PNRR" },
+  { "a": "Area 1 DigCompEdu – Coinvolgimento e professionalità", "b": "Promuove etica digitale, comunicazione e sviluppo professionale.", "area": "Competenze digitali e PNRR" },
+  { "a": "Area 2 DigCompEdu – Risorse digitali", "b": "Uso, creazione e gestione di contenuti digitali educativi.", "area": "Competenze digitali e PNRR" },
+  { "a": "Area 3 DigCompEdu – Pratiche didattiche digitali", "b": "Integra attività online efficaci e metodologie innovative.", "area": "Competenze digitali e PNRR" },
+  { "a": "Area 4 DigCompEdu – Valutazione digitale", "b": "Strumenti per monitorare e valutare l’apprendimento in digitale.", "area": "Competenze digitali e PNRR" },
+  { "a": "Area 5 DigCompEdu – Supporto all’apprendimento", "b": "Personalizzazione, differenziazione e accessibilità digitale.", "area": "Competenze digitali e PNRR" },
+  { "a": "Area 6 DigCompEdu – Empowerment degli studenti", "b": "Responsabilizzazione digitale, creatività e sicurezza online.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Didattica Digitale Integrata (DDI)", "b": "Modalità che integra attività in presenza e online secondo il Piano scolastico DDI.", "area": "Competenze digitali e PNRR" },
+  { "a": "Piano Nazionale Scuola Digitale (PNSD)", "b": "Strategia per innovazione digitale della scuola introdotta nel 2015.", "area": "Competenze digitali e PNRR" },
+  { "a": "Animatore Digitale", "b": "Docente responsabile dell'innovazione digitale nella scuola.", "area": "Competenze digitali e PNRR" },
+  { "a": "Team Digitale", "b": "Gruppo di docenti che supporta innovazione, formazione e sperimentazione digitale.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "PNRR – Missione 4", "b": "Riforme e investimenti per istruzione e ricerca con focus su digitale e STEM.", "area": "Competenze digitali e PNRR" },
+  { "a": "PNRR – Scuola 4.0", "b": "Trasforma classi in ambienti innovativi e laboratori digitali avanzati.", "area": "Competenze digitali e PNRR" },
+  { "a": "Ambienti di apprendimento innovativi (ANI)", "b": "Spazi flessibili e digitali che favoriscono metodologie attive.", "area": "Competenze digitali e PNRR" },
+  { "a": "Laboratori per le competenze digitali", "b": "Previsti dal PNRR per lingue, STEM, coding e robotica.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Coding a scuola", "b": "Sviluppa pensiero computazionale e problem solving attraverso linguaggi e attività digitali.", "area": "Competenze digitali e PNRR" },
+  { "a": "Robotica educativa", "b": "Utilizza robot e sensori per attività STEM, progettazione e creatività.", "area": "Competenze digitali e PNRR" },
+  { "a": "Realtà aumentata (AR)", "b": "Integra elementi virtuali nel mondo reale per potenziare apprendimento esperienziale.", "area": "Competenze digitali e PNRR" },
+  { "a": "Realtà virtuale (VR)", "b": "Immersione totale utile per simulazioni, visite virtuali e ambienti STEM.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Gamification digitale", "b": "Utilizza dinamiche di gioco tramite strumenti digitali per aumentare motivazione e engagement.", "area": "Competenze digitali e PNRR" },
+  { "a": "Learning apps digitali", "b": "Strumenti come Kahoot, Quizlet, Nearpod per attività interattive.", "area": "Competenze digitali e PNRR" },
+  { "a": "Classroom management digitale", "b": "Gestione della classe attraverso piattaforme come Google Classroom o Moodle.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Cybersecurity a scuola", "b": "Formazione su sicurezza digitale, protezione dati e comportamenti consapevoli.", "area": "Competenze digitali e PNRR" },
+  { "a": "Digital well-being", "b": "Promuove equilibrio nell’uso dei dispositivi e nella gestione delle relazioni online.", "area": "Competenze digitali e PNRR" },
+  { "a": "Cittadinanza digitale", "b": "Consapevolezza critica nell'uso del web, delle fonti e dei social network.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Fake news e media literacy", "b": "Competenze per valutare attendibilità delle informazioni e contrastare disinformazione.", "area": "Competenze digitali e PNRR" },
+  { "a": "Didattica inclusiva digitale", "b": "Utilizza strumenti digitali per accessibilità come sintesi vocale, video sottotitolati, mappe.", "area": "Competenze digitali e PNRR" },
+  { "a": "Intelligenza artificiale educativa", "b": "Strumenti basati su AI per personalizzare percorsi e supportare studenti.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Produzione di contenuti digitali", "b": "Creazione di video, podcast, infografiche e materiali multimediali.", "area": "Competenze digitali e PNRR" },
+  { "a": "Pensiero computazionale unplugged", "b": "Attività senza computer che sviluppano logica e problem solving.", "area": "Competenze digitali e PNRR" },
+  { "a": "Flipped digital", "b": "Versione digitale della flipped classroom con video-lezioni e attività online.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Portfolio digitale dello studente", "b": "Raccolta di materiali che documentano competenze, progressi e progetti.", "area": "Competenze digitali e PNRR" },
+  { "a": "E-safety", "b": "Protezione della propria identità digitale, delle password e dei dati personali.", "area": "Competenze digitali e PNRR" },
+
+  { "a": "Intelligenza artificiale generativa a scuola", "b": "Strumenti come ChatGPT per supportare scrittura, ricerca, simulazioni e personalizzazione.", "area": "Competenze digitali e PNRR" },
+  { "a": "Etica digitale", "b": "Responsabilità nell’uso delle tecnologie e rispetto della proprietà intellettuale.", "area": "Competenze digitali e PNRR" }
 ]
+
